@@ -1,0 +1,1065 @@
+ecu,message,signal,receivers,frame
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl,ENGINE_DATA,PlugLockStatus,Fuel_Injection_Ctrl,FR_POWE_001
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Torque_Converter_Ctrl,ENGINE_DATA,OilPressure,Torque_Converter_Ctrl;Transmission_Control_Module,FR_POWE_001
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,ENGINE_DATA,CoolantTemp,Ignition_Ctrl;Coil_Driver_Unit,FR_POWE_001
+Powertrain_Domain_Ctrl -> Onboard_Charger,ENGINE_DATA,InjectionTiming,Onboard_Charger,FR_POWE_001
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,ENGINE_DATA,IgnitionAngle,Engine_Control_Module;Fuel_Injection_Ctrl;Fuel_Pump_Ctrl,FR_POWE_001
+Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl,ENGINE_DATA,KnockLevel,Battery_Thermal_Ctrl;Battery_Management_System,FR_POWE_001
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,ENGINE_DATA,BatterySOH,Fuel_Injection_Ctrl;Engine_Control_Module;Injector_Driver_Bank2,FR_POWE_001
+Powertrain_Domain_Ctrl -> Battery_Management_System -> Cell_Monitor_Unit_3,ENGINE_DATA,CellTempMax,Cell_Monitor_Unit_3,FR_POWE_001
+Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Front -> Resolver_Front,ENGINE_DATA,EngineSpeed,Resolver_Front;Motor_Ctrl_Front;Traction_Inverter_Ctrl,FR_POWE_001
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl,ENGINE_DATA,PackVoltage,Engine_Control_Module;Fuel_Injection_Ctrl,FR_POWE_001
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Torque_Converter_Ctrl,ENGINE_DATA,LambdaValue,Transmission_Control_Module;Torque_Converter_Ctrl,FR_POWE_001
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,ENGINE_DATA,MotorSpeedFront,Engine_Control_Module;Coil_Driver_Unit,FR_POWE_001
+Powertrain_Domain_Ctrl -> Onboard_Charger,ENGINE_DATA,CellTempMin,Onboard_Charger,FR_POWE_001
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,ENGINE_DATA,ChargeState,Fuel_Injection_Ctrl;Fuel_Pump_Ctrl,FR_POWE_001
+Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl,ENGINE_DATA,TorqueRequest,Battery_Thermal_Ctrl,FR_POWE_001
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,ENGINE_DATA,ExhaustTemp,Engine_Control_Module;Fuel_Injection_Ctrl;Injector_Driver_Bank2,FR_POWE_001
+Powertrain_Domain_Ctrl -> Battery_Management_System -> Cell_Monitor_Unit_3,ENGINE_DATA,ActualTorque,Battery_Management_System;Cell_Monitor_Unit_3,FR_POWE_001
+Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Front -> Resolver_Front,ENGINE_DATA,BoostPressure,Resolver_Front;Traction_Inverter_Ctrl;Motor_Ctrl_Front,FR_POWE_001
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl,ENGINE_DATA,ChargeCurrent,Fuel_Injection_Ctrl;Engine_Control_Module,FR_POWE_001
+Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,CHARGE_STATUS,TorqueRequest,Boost_Pressure_Sensor;Turbo_Ctrl,FR_POWE_002
+Engine_Control_Module -> Throttle_Body_Ctrl -> Pedal_Position_Sensor,CHARGE_STATUS,PedalPosition,Pedal_Position_Sensor,FR_POWE_002
+Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,CHARGE_STATUS,ChargeState,Fuel_Injection_Ctrl;Fuel_Pump_Ctrl,FR_POWE_002
+Engine_Control_Module -> Ignition_Ctrl -> Knock_Sensor_Module,CHARGE_STATUS,ExhaustTemp,Ignition_Ctrl;Knock_Sensor_Module,FR_POWE_002
+Engine_Control_Module -> Fuel_Injection_Ctrl,CHARGE_STATUS,FuelRate,Fuel_Injection_Ctrl,FR_POWE_002
+Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank1,CHARGE_STATUS,BoostPressure,Injector_Driver_Bank1;Fuel_Injection_Ctrl,FR_POWE_002
+Engine_Control_Module -> Throttle_Body_Ctrl,CHARGE_STATUS,LambdaValue,Throttle_Body_Ctrl,FR_POWE_002
+Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,CHARGE_STATUS,KnockLevel,Injector_Driver_Bank2;Fuel_Injection_Ctrl,FR_POWE_002
+Engine_Control_Module -> Turbo_Ctrl,CHARGE_STATUS,MotorSpeedRear,Turbo_Ctrl,FR_POWE_002
+Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,CHARGE_STATUS,PackVoltage,Ignition_Ctrl;Coil_Driver_Unit,FR_POWE_002
+Engine_Control_Module -> Turbo_Ctrl -> Wastegate_Actuator,CHARGE_STATUS,CoolantPumpDuty,Wastegate_Actuator;Turbo_Ctrl,FR_POWE_002
+Engine_Control_Module -> Ignition_Ctrl,CHARGE_STATUS,RegenLevel,Ignition_Ctrl,FR_POWE_002
+Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,CHARGE_STATUS,PackCurrent,Boost_Pressure_Sensor,FR_POWE_002
+Engine_Control_Module -> Throttle_Body_Ctrl -> Pedal_Position_Sensor,CHARGE_STATUS,IdleStopActive,Pedal_Position_Sensor,FR_POWE_002
+Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,CHARGE_STATUS,MotorSpeedFront,Fuel_Injection_Ctrl;Fuel_Pump_Ctrl,FR_POWE_002
+Engine_Control_Module -> Ignition_Ctrl,ENGINE_DATA,CellTempMax,Ignition_Ctrl,FR_POWE_003
+Engine_Control_Module -> Turbo_Ctrl -> Wastegate_Actuator,ENGINE_DATA,BatterySOC,Wastegate_Actuator;Turbo_Ctrl,FR_POWE_003
+Engine_Control_Module -> Throttle_Body_Ctrl -> Pedal_Position_Sensor,ENGINE_DATA,ThrottlePosition,Throttle_Body_Ctrl;Pedal_Position_Sensor,FR_POWE_003
+Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,ENGINE_DATA,RegenLevel,Fuel_Pump_Ctrl;Fuel_Injection_Ctrl,FR_POWE_003
+Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,ENGINE_DATA,FuelLevel,Injector_Driver_Bank2;Fuel_Injection_Ctrl,FR_POWE_003
+Engine_Control_Module -> Throttle_Body_Ctrl,ENGINE_DATA,PackCurrent,Throttle_Body_Ctrl,FR_POWE_003
+Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank1,ENGINE_DATA,OilPressure,Injector_Driver_Bank1,FR_POWE_003
+Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,ENGINE_DATA,LambdaValue,Turbo_Ctrl;Boost_Pressure_Sensor,FR_POWE_003
+Engine_Control_Module -> Fuel_Injection_Ctrl,ENGINE_DATA,MotorSpeedRear,Fuel_Injection_Ctrl,FR_POWE_003
+Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,ENGINE_DATA,PedalPosition,Ignition_Ctrl;Coil_Driver_Unit,FR_POWE_003
+Engine_Control_Module -> Ignition_Ctrl -> Knock_Sensor_Module,ENGINE_DATA,PlugLockStatus,Ignition_Ctrl;Knock_Sensor_Module,FR_POWE_003
+Engine_Control_Module -> Turbo_Ctrl,ENGINE_DATA,PackVoltage,Turbo_Ctrl,FR_POWE_003
+Engine_Control_Module -> Ignition_Ctrl,ENGINE_DATA,FuelRate,Ignition_Ctrl,FR_POWE_003
+Engine_Control_Module -> Turbo_Ctrl -> Wastegate_Actuator,ENGINE_DATA,MotorSpeedFront,Turbo_Ctrl;Wastegate_Actuator,FR_POWE_003
+Engine_Control_Module -> Throttle_Body_Ctrl -> Pedal_Position_Sensor,ENGINE_DATA,ChargeState,Pedal_Position_Sensor;Throttle_Body_Ctrl,FR_POWE_003
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,OBJECT_DATA,SurroundViewActive,Ultrasonic_Sensor_Front,FR_ADAS_004
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,OBJECT_DATA,CrossTrafficAlert,Blind_Spot_Monitor_R,FR_ADAS_004
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,OBJECT_DATA,DriverDrowsiness,Park_Assist_Ctrl;Surround_View_Camera,FR_ADAS_004
+ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,OBJECT_DATA,LaneKeepTorque,Corner_Radar_RL;Blind_Spot_Monitor_L,FR_ADAS_004
+ADAS_Domain_Ctrl -> Front_Radar,OBJECT_DATA,ACCSetSpeed,Front_Radar,FR_ADAS_004
+ADAS_Domain_Ctrl -> Driver_Monitor_Camera,OBJECT_DATA,LaneDepartureWarn,Driver_Monitor_Camera,FR_ADAS_004
+ADAS_Domain_Ctrl -> Corner_Radar_RL,OBJECT_DATA,LeadVehicleSpeed,Corner_Radar_RL,FR_ADAS_004
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,OBJECT_DATA,ParkDistanceFront,Park_Assist_Ctrl,FR_ADAS_004
+ADAS_Domain_Ctrl -> Front_Camera_Module,OBJECT_DATA,LeadVehicleDistance,Front_Camera_Module,FR_ADAS_004
+ADAS_Domain_Ctrl -> Corner_Radar_RR,OBJECT_DATA,ObjectCountFront,Corner_Radar_RR,FR_ADAS_004
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,OBJECT_DATA,DriverDistracted,Park_Assist_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_004
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,OBJECT_DATA,BlindSpotLeft,Blind_Spot_Monitor_R;Corner_Radar_RR,FR_ADAS_004
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,OBJECT_DATA,AEBBrakeRequest,Surround_View_Camera;Park_Assist_Ctrl,FR_ADAS_004
+ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,OBJECT_DATA,ACCTargetDistance,Blind_Spot_Monitor_L,FR_ADAS_004
+ADAS_Domain_Ctrl -> Front_Radar,OBJECT_DATA,AEBWarning,Front_Radar,FR_ADAS_004
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,SAFETY_STATUS,TurnIndicatorRight,Door_Ctrl_FL;Body_Control_Module;Mirror_Ctrl_L,FR_BODY_005
+Body_Domain_Ctrl -> HVAC_Ctrl -> Cabin_Temp_Sensor,SAFETY_STATUS,DoorOpenRR,Cabin_Temp_Sensor;HVAC_Ctrl,FR_BODY_005
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_R,SAFETY_STATUS,BlowerLevel,Crash_Sensor_Side_R;Airbag_Control_Unit,FR_BODY_005
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Front,SAFETY_STATUS,WindowPositionRR,Crash_Sensor_Front;Airbag_Control_Unit,FR_BODY_005
+Body_Domain_Ctrl -> HVAC_Ctrl,SAFETY_STATUS,AirbagDeployCmd,HVAC_Ctrl,FR_BODY_005
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Ambient_Light_Ctrl,SAFETY_STATUS,ACCompressorOn,Lighting_Ctrl;Ambient_Light_Ctrl,FR_BODY_005
+Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl,SAFETY_STATUS,DoorOpenFR,Body_Control_Module;Wiper_Ctrl,FR_BODY_005
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Occupant_Detection_Sensor,SAFETY_STATUS,KeyFobDetected,Seat_Ctrl_Passenger;Occupant_Detection_Sensor,FR_BODY_005
+Body_Domain_Ctrl -> Keyless_Entry_Module,SAFETY_STATUS,DoorOpenRL,Keyless_Entry_Module,FR_BODY_005
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,SAFETY_STATUS,BrakeLampActive,Body_Control_Module;Window_Lift_Motor_FR,FR_BODY_005
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL,SAFETY_STATUS,ImmobilizerStatus,Door_Ctrl_FL;Body_Control_Module,FR_BODY_005
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Seat_Heater_Passenger,SAFETY_STATUS,OccupantPresent,Seat_Heater_Passenger;Seat_Ctrl_Passenger,FR_BODY_005
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,SAFETY_STATUS,RainIntensity,Window_Lift_Motor_FL;Door_Ctrl_FL;Body_Control_Module,FR_BODY_005
+Battery_Management_System -> Cell_Monitor_Unit_3,MOTOR_DATA,ContactorState,Cell_Monitor_Unit_3,FR_POWE_006
+Battery_Management_System -> Cell_Monitor_Unit_1,MOTOR_DATA,TorqueRequest,Cell_Monitor_Unit_1,FR_POWE_006
+Battery_Management_System -> Battery_Thermal_Ctrl,MOTOR_DATA,BatterySOH,Battery_Thermal_Ctrl,FR_POWE_006
+Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,MOTOR_DATA,PedalPosition,Coolant_Pump_Ctrl;Battery_Thermal_Ctrl,FR_POWE_006
+Battery_Management_System -> HV_Contactor_Ctrl,MOTOR_DATA,BoostPressure,HV_Contactor_Ctrl,FR_POWE_006
+Battery_Management_System -> Cell_Monitor_Unit_2,MOTOR_DATA,FuelLevel,Cell_Monitor_Unit_2,FR_POWE_006
+Battery_Management_System -> Cell_Monitor_Unit_3,MOTOR_DATA,PlugLockStatus,Cell_Monitor_Unit_3,FR_POWE_006
+Battery_Management_System -> Cell_Monitor_Unit_1,MOTOR_DATA,CoolantTemp,Cell_Monitor_Unit_1,FR_POWE_006
+Battery_Management_System -> Battery_Thermal_Ctrl,MOTOR_DATA,OilPressure,Battery_Thermal_Ctrl,FR_POWE_006
+Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,MOTOR_DATA,CellTempMin,Coolant_Pump_Ctrl,FR_POWE_006
+Battery_Management_System -> HV_Contactor_Ctrl,MOTOR_DATA,RegenLevel,HV_Contactor_Ctrl,FR_POWE_006
+Battery_Management_System -> Cell_Monitor_Unit_2,MOTOR_DATA,LambdaValue,Cell_Monitor_Unit_2,FR_POWE_006
+Battery_Management_System -> Cell_Monitor_Unit_3,MOTOR_DATA,ExhaustTemp,Cell_Monitor_Unit_3,FR_POWE_006
+Body_Domain_Ctrl -> Seat_Ctrl_Driver,DOOR_STATUS,CentralLockState,Seat_Ctrl_Driver,FR_BODY_007
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Seat_Heater_Passenger,DOOR_STATUS,HighBeamActive,Seat_Ctrl_Passenger;Seat_Heater_Passenger,FR_BODY_007
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RR,DOOR_STATUS,ImmobilizerStatus,Door_Ctrl_RR;Body_Control_Module,FR_BODY_007
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Ambient_Light_Ctrl,DOOR_STATUS,BrakeLampActive,Body_Control_Module;Ambient_Light_Ctrl,FR_BODY_007
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Occupant_Detection_Sensor,DOOR_STATUS,AirbagDeployCmd,Seat_Ctrl_Passenger;Occupant_Detection_Sensor,FR_BODY_007
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,DOOR_STATUS,SeatPositionMemory,Door_Ctrl_FR;Window_Lift_Motor_FR,FR_BODY_007
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger,DOOR_STATUS,SeatbeltStatus,Seat_Ctrl_Passenger,FR_BODY_007
+Body_Domain_Ctrl -> Keyless_Entry_Module,DOOR_STATUS,WindowPositionRR,Keyless_Entry_Module,FR_BODY_007
+Body_Domain_Ctrl -> Keyless_Entry_Module -> Immobilizer,DOOR_STATUS,MirrorFoldCmd,Immobilizer;Keyless_Entry_Module,FR_BODY_007
+Body_Domain_Ctrl -> Seat_Ctrl_Driver,DOOR_STATUS,WindowPositionFR,Seat_Ctrl_Driver,FR_BODY_007
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Seat_Heater_Passenger,DOOR_STATUS,DoorOpenRR,Seat_Heater_Passenger,FR_BODY_007
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RR,DOOR_STATUS,TurnIndicatorRight,Body_Control_Module;Door_Ctrl_RR,FR_BODY_007
+Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,TELEMATICS_DATA,PhoneCallActive,Instrument_Cluster;Head_Up_Display,FR_INFO_008
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,TELEMATICS_DATA,ClockTime,LTE_Modem;Telematics_Control_Unit,FR_INFO_008
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit,TELEMATICS_DATA,HUDEnable,Telematics_Control_Unit,FR_INFO_008
+Infotainment_Domain_Ctrl -> Instrument_Cluster,TELEMATICS_DATA,GPSSpeed,Instrument_Cluster,FR_INFO_008
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,TELEMATICS_DATA,NetworkSignal,Telematics_Control_Unit;GNSS_Receiver,FR_INFO_008
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,TELEMATICS_DATA,AudioSource,Infotainment_Head_Unit,FR_INFO_008
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,TELEMATICS_DATA,GPSLongitude,Infotainment_Head_Unit;Voice_Assistant_Module,FR_INFO_008
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,TELEMATICS_DATA,DisplayBrightness,Infotainment_Head_Unit;Rear_Seat_Entertainment,FR_INFO_008
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,TELEMATICS_DATA,GPSLatitude,Telematics_Control_Unit;eCall_Module,FR_INFO_008
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,TELEMATICS_DATA,ECallTriggered,Audio_Amplifier;Infotainment_Head_Unit,FR_INFO_008
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,NAV_DATA,VolumeLevel,Infotainment_Domain_Ctrl;Rear_Seat_Entertainment,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,NAV_DATA,AudioSource,GNSS_Receiver;Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,NAV_DATA,ClusterTheme,Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,NAV_DATA,RearScreenPower,Audio_Amplifier;Infotainment_Head_Unit;Infotainment_Domain_Ctrl,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,NAV_DATA,MediaTrackId,Infotainment_Domain_Ctrl;Instrument_Cluster,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl,NAV_DATA,ClockTime,Infotainment_Domain_Ctrl,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,NAV_DATA,HUDEnable,eCall_Module;Telematics_Control_Unit,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,NAV_DATA,GPSLongitude,Voice_Assistant_Module;Infotainment_Head_Unit,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,NAV_DATA,GPSLatitude,Instrument_Cluster;Infotainment_Domain_Ctrl;Head_Up_Display,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,NAV_DATA,NavGuidanceActive,Telematics_Control_Unit;Infotainment_Domain_Ctrl;LTE_Modem,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,NAV_DATA,NetworkSignal,Infotainment_Head_Unit;Infotainment_Domain_Ctrl,FR_INFO_009
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,NAV_DATA,OTAUpdateStatus,Infotainment_Domain_Ctrl;Infotainment_Head_Unit;Rear_Seat_Entertainment,FR_INFO_009
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl,DOOR_STATUS,BrakeLampActive,Body_Control_Module;Wiper_Ctrl,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> Cabin_Temp_Sensor,DOOR_STATUS,HighBeamActive,Cabin_Temp_Sensor;Body_Domain_Ctrl;HVAC_Ctrl,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> Blower_Motor_Ctrl,DOOR_STATUS,CabinTemp,HVAC_Ctrl;Blower_Motor_Ctrl,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR,DOOR_STATUS,AmbientLightColor,Body_Control_Module;Body_Domain_Ctrl;Door_Ctrl_FR,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RL,DOOR_STATUS,SeatbeltStatus,Body_Control_Module;Door_Ctrl_RL,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,DOOR_STATUS,DoorOpenFR,Body_Control_Module;Mirror_Ctrl_L;Body_Domain_Ctrl,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Mirror_Ctrl_R,DOOR_STATUS,WindowPositionRL,Body_Domain_Ctrl;Body_Control_Module;Mirror_Ctrl_R,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl,DOOR_STATUS,ImmobilizerStatus,Lighting_Ctrl,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> AC_Compressor_Ctrl,DOOR_STATUS,TurnIndicatorRight,Body_Domain_Ctrl;HVAC_Ctrl;AC_Compressor_Ctrl,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Keyless_Entry_Module -> Immobilizer,DOOR_STATUS,BlowerLevel,Body_Domain_Ctrl;Immobilizer,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Seat_Heater_Passenger,DOOR_STATUS,DoorOpenFL,Seat_Ctrl_Passenger;Seat_Heater_Passenger,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl,DOOR_STATUS,SeatHeaterLevel,Body_Control_Module;Wiper_Ctrl,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> Cabin_Temp_Sensor,DOOR_STATUS,SeatPositionMemory,HVAC_Ctrl;Cabin_Temp_Sensor,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> Blower_Motor_Ctrl,DOOR_STATUS,WiperSpeed,HVAC_Ctrl;Blower_Motor_Ctrl,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR,DOOR_STATUS,ACCompressorOn,Body_Control_Module;Door_Ctrl_FR,FR_BODY_010
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RL,DOOR_STATUS,WindowPositionFR,Door_Ctrl_RL,FR_BODY_010
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,LANE_DATA,ACCTargetDistance,Auto_Emergency_Brake;Adaptive_Cruise_Ctrl,FR_ADAS_011
+ADAS_Domain_Ctrl -> Front_Radar,LANE_DATA,AEBWarning,Front_Radar,FR_ADAS_011
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,LANE_DATA,CrossTrafficAlert,Park_Assist_Ctrl,FR_ADAS_011
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,LANE_DATA,DriverDistracted,Lane_Keep_Assist,FR_ADAS_011
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,LANE_DATA,ACCSetSpeed,Park_Assist_Ctrl;Ultrasonic_Sensor_Rear,FR_ADAS_011
+ADAS_Domain_Ctrl -> Front_Camera_Module,LANE_DATA,BlindSpotLeft,Front_Camera_Module,FR_ADAS_011
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,LANE_DATA,ObjectCountFront,Blind_Spot_Monitor_R;Corner_Radar_RR,FR_ADAS_011
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,LANE_DATA,RadarBlocked,Surround_View_Camera;Park_Assist_Ctrl,FR_ADAS_011
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,LANE_DATA,ParkDistanceFront,Adaptive_Cruise_Ctrl;Front_Radar;Auto_Emergency_Brake,FR_ADAS_011
+ADAS_Domain_Ctrl -> Front_Radar,LANE_DATA,CameraBlocked,Front_Radar,FR_ADAS_011
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,LANE_DATA,LeadVehicleDistance,Park_Assist_Ctrl,FR_ADAS_011
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,LANE_DATA,SpeedLimitDetected,Front_Camera_Module;Lane_Keep_Assist,FR_ADAS_011
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,LANE_DATA,LaneKeepTorque,Ultrasonic_Sensor_Rear,FR_ADAS_011
+ADAS_Domain_Ctrl -> Front_Camera_Module,LANE_DATA,LeadVehicleSpeed,Front_Camera_Module,FR_ADAS_011
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,LANE_DATA,ParkDistanceRear,Blind_Spot_Monitor_R;Corner_Radar_RR,FR_ADAS_011
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,LANE_DATA,AEBBrakeRequest,Park_Assist_Ctrl;Surround_View_Camera,FR_ADAS_011
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,LANE_DATA,LaneDepartureWarn,Adaptive_Cruise_Ctrl;Front_Radar;Auto_Emergency_Brake,FR_ADAS_011
+ADAS_Domain_Ctrl -> Front_Radar,LANE_DATA,BlindSpotRight,Front_Radar,FR_ADAS_011
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,LANE_DATA,SurroundViewActive,Park_Assist_Ctrl,FR_ADAS_011
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,WHEEL_SPEED,TirePressureRR,ABS_Module;Wheel_Speed_Sensor_RR,FR_CHAS_012
+Chassis_Domain_Ctrl -> Electric_Parking_Brake,WHEEL_SPEED,SteeringAssistLevel,Electric_Parking_Brake,FR_CHAS_012
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,WHEEL_SPEED,RideHeightRear,Yaw_Rate_Sensor;Electronic_Stability_Ctrl,FR_CHAS_012
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl,WHEEL_SPEED,ParkBrakeState,Air_Suspension_Ctrl,FR_CHAS_012
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,WHEEL_SPEED,LongitudinalAccel,Height_Sensor_Front;Air_Suspension_Ctrl,FR_CHAS_012
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,WHEEL_SPEED,TirePressureRL,ABS_Module;Wheel_Speed_Sensor_RL;Electronic_Stability_Ctrl,FR_CHAS_012
+Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,WHEEL_SPEED,HillHoldActive,Tire_Pressure_Monitor,FR_CHAS_012
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,WHEEL_SPEED,TirePressureFL,Air_Suspension_Ctrl;Height_Sensor_Rear,FR_CHAS_012
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Angle_Sensor,WHEEL_SPEED,TirePressureFR,Electric_Power_Steering;Steering_Angle_Sensor,FR_CHAS_012
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_R,WHEEL_SPEED,RideHeightFront,Electric_Parking_Brake;Brake_Caliper_Actuator_R,FR_CHAS_012
+Chassis_Domain_Ctrl -> Electric_Power_Steering,WHEEL_SPEED,VehicleSpeed,Electric_Power_Steering,FR_CHAS_012
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl,WHEEL_SPEED,WheelSpeedFR,Electronic_Stability_Ctrl,FR_CHAS_012
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Torque_Sensor,WHEEL_SPEED,ABSActive,Electric_Power_Steering;Steering_Torque_Sensor,FR_CHAS_012
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,STABILITY_STATUS,RideHeightRear,Chassis_Domain_Ctrl;Wheel_Speed_Sensor_RL,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Power_Steering,STABILITY_STATUS,RideHeightFront,Electric_Power_Steering,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl,STABILITY_STATUS,ESCActive,Chassis_Domain_Ctrl,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,STABILITY_STATUS,YawRate,Wheel_Speed_Sensor_FR;Electronic_Stability_Ctrl;ABS_Module,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,STABILITY_STATUS,WheelSpeedFL,Brake_Booster_Ctrl;Electronic_Stability_Ctrl,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_L,STABILITY_STATUS,BrakePressure,Brake_Caliper_Actuator_L;Chassis_Domain_Ctrl,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,STABILITY_STATUS,BoosterVacuum,Height_Sensor_Rear;Chassis_Domain_Ctrl;Air_Suspension_Ctrl,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Air_Compressor_Ctrl,STABILITY_STATUS,WheelSpeedRL,Chassis_Domain_Ctrl;Air_Suspension_Ctrl;Air_Compressor_Ctrl,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Parking_Brake,STABILITY_STATUS,WheelSpeedFR,Chassis_Domain_Ctrl;Electric_Parking_Brake,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module,STABILITY_STATUS,SteeringTorque,ABS_Module,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,STABILITY_STATUS,TirePressureFR,Chassis_Domain_Ctrl;Yaw_Rate_Sensor,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl,STABILITY_STATUS,CaliperForceRight,Electronic_Stability_Ctrl,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,STABILITY_STATUS,TirePressureRR,Height_Sensor_Front;Air_Suspension_Ctrl,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,STABILITY_STATUS,SuspensionMode,Chassis_Domain_Ctrl;Wheel_Speed_Sensor_RL,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Power_Steering,STABILITY_STATUS,BrakePedalSwitch,Electric_Power_Steering;Chassis_Domain_Ctrl,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl,STABILITY_STATUS,CaliperForceLeft,Chassis_Domain_Ctrl,FR_CHAS_013
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,STABILITY_STATUS,ABSActive,Electronic_Stability_Ctrl;Wheel_Speed_Sensor_FR,FR_CHAS_013
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar,DRIVER_MONITOR,ParkDistanceRear,ADAS_Domain_Ctrl;Front_Radar,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,DRIVER_MONITOR,AEBBrakeRequest,Park_Assist_Ctrl;ADAS_Domain_Ctrl;Surround_View_Camera,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Driver_Monitor_Camera,DRIVER_MONITOR,ObjectCountFront,Driver_Monitor_Camera;ADAS_Domain_Ctrl,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,DRIVER_MONITOR,DriverDistracted,Lane_Keep_Assist,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module,DRIVER_MONITOR,DriverDrowsiness,Front_Camera_Module;ADAS_Domain_Ctrl,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl,DRIVER_MONITOR,LaneKeepTorque,ADAS_Domain_Ctrl,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,DRIVER_MONITOR,BlindSpotLeft,Park_Assist_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,DRIVER_MONITOR,LaneDepartureWarn,ADAS_Domain_Ctrl;Ultrasonic_Sensor_Rear;Park_Assist_Ctrl,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,DRIVER_MONITOR,LeadVehicleSpeed,Blind_Spot_Monitor_L;Corner_Radar_RL,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module -> Traffic_Sign_Recognition,DRIVER_MONITOR,LeadVehicleDistance,Traffic_Sign_Recognition;Front_Camera_Module,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,DRIVER_MONITOR,SurroundViewActive,ADAS_Domain_Ctrl;Corner_Radar_RR;Blind_Spot_Monitor_R,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar,DRIVER_MONITOR,ACCTargetDistance,Front_Radar;ADAS_Domain_Ctrl,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,DRIVER_MONITOR,CrossTrafficAlert,Park_Assist_Ctrl;Surround_View_Camera,FR_ADAS_014
+Central_Gateway -> ADAS_Domain_Ctrl -> Driver_Monitor_Camera,DRIVER_MONITOR,AEBWarning,ADAS_Domain_Ctrl;Driver_Monitor_Camera,FR_ADAS_014
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl -> Charge_Lock_Actuator,BATTERY_STATUS,KnockLevel,Charge_Port_Ctrl;Charge_Lock_Actuator;Onboard_Charger,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> HV_Contactor_Ctrl,BATTERY_STATUS,CoolantTemp,Battery_Management_System;HV_Contactor_Ctrl,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger,BATTERY_STATUS,BatterySOC,Onboard_Charger,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Cell_Monitor_Unit_1,BATTERY_STATUS,CurrentGear,Powertrain_Domain_Ctrl;Battery_Management_System;Cell_Monitor_Unit_1,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module,BATTERY_STATUS,IntakeAirTemp,Powertrain_Domain_Ctrl;Transmission_Control_Module,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl,BATTERY_STATUS,PackVoltage,Battery_Management_System;Battery_Thermal_Ctrl,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module,BATTERY_STATUS,EngineSpeed,Engine_Control_Module;Powertrain_Domain_Ctrl,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl,BATTERY_STATUS,ExhaustTemp,Ignition_Ctrl;Engine_Control_Module,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,BATTERY_STATUS,TorqueRequest,Coil_Driver_Unit;Powertrain_Domain_Ctrl;Engine_Control_Module,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl -> Clutch_Position_Sensor,BATTERY_STATUS,OilPressure,Clutch_Position_Sensor;Transmission_Control_Module;Clutch_Actuator_Ctrl,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,BATTERY_STATUS,IdleStopActive,Injector_Driver_Bank2;Engine_Control_Module;Fuel_Injection_Ctrl,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl -> Charge_Lock_Actuator,BATTERY_STATUS,ThrottlePosition,Onboard_Charger;Charge_Lock_Actuator,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> HV_Contactor_Ctrl,BATTERY_STATUS,ActualTorque,Battery_Management_System;Powertrain_Domain_Ctrl;HV_Contactor_Ctrl,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger,BATTERY_STATUS,MotorSpeedRear,Onboard_Charger,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Cell_Monitor_Unit_1,BATTERY_STATUS,CellTempMin,Battery_Management_System;Cell_Monitor_Unit_1;Powertrain_Domain_Ctrl,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module,BATTERY_STATUS,FuelRate,Powertrain_Domain_Ctrl;Transmission_Control_Module,FR_POWE_015
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl,BATTERY_STATUS,CoolantPumpDuty,Powertrain_Domain_Ctrl;Battery_Thermal_Ctrl,FR_POWE_015
+Body_Domain_Ctrl -> HVAC_Ctrl -> AC_Compressor_Ctrl,SAFETY_STATUS,SeatHeaterLevel,HVAC_Ctrl;AC_Compressor_Ctrl,FR_BODY_016
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Mirror_Ctrl_R,SAFETY_STATUS,DoorOpenRL,Mirror_Ctrl_R,FR_BODY_016
+Body_Domain_Ctrl -> Keyless_Entry_Module,SAFETY_STATUS,AirbagDeployCmd,Keyless_Entry_Module,FR_BODY_016
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_L,SAFETY_STATUS,HighBeamActive,Airbag_Control_Unit;Crash_Sensor_Side_L,FR_BODY_016
+Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl,SAFETY_STATUS,SeatPositionMemory,Body_Control_Module;Wiper_Ctrl,FR_BODY_016
+Body_Domain_Ctrl -> Keyless_Entry_Module -> Immobilizer,SAFETY_STATUS,CabinTemp,Keyless_Entry_Module;Immobilizer,FR_BODY_016
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Tail_Lamp_Ctrl,SAFETY_STATUS,TurnIndicatorRight,Lighting_Ctrl;Tail_Lamp_Ctrl,FR_BODY_016
+Body_Domain_Ctrl -> Body_Control_Module,SAFETY_STATUS,TailgateOpen,Body_Control_Module,FR_BODY_016
+Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Heater_Driver,SAFETY_STATUS,SeatbeltStatus,Seat_Heater_Driver;Seat_Ctrl_Driver,FR_BODY_016
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR,SAFETY_STATUS,WiperSpeed,Body_Control_Module;Door_Ctrl_FR,FR_BODY_016
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,SAFETY_STATUS,KeyFobDetected,Headlamp_Ctrl_R,FR_BODY_016
+Body_Domain_Ctrl -> HVAC_Ctrl -> Cabin_Temp_Sensor,SAFETY_STATUS,DoorOpenFR,HVAC_Ctrl;Cabin_Temp_Sensor,FR_BODY_016
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger,SAFETY_STATUS,CrashDetected,Seat_Ctrl_Passenger,FR_BODY_016
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,SAFETY_STATUS,WindowPositionRR,Door_Ctrl_FL;Window_Lift_Motor_FL,FR_BODY_016
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Ambient_Light_Ctrl,SAFETY_STATUS,HeadlampStatus,Lighting_Ctrl;Ambient_Light_Ctrl;Body_Control_Module,FR_BODY_016
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,SAFETY_STATUS,DoorOpenRR,Body_Control_Module;Door_Ctrl_RL;Window_Lift_Motor_RL,FR_BODY_016
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,NAV_DATA,RearScreenPower,Rear_Seat_Entertainment;Infotainment_Head_Unit,FR_INFO_017
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,NAV_DATA,NavGuidanceActive,Audio_Amplifier,FR_INFO_017
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,NAV_DATA,ClusterTheme,Telematics_Control_Unit;GNSS_Receiver,FR_INFO_017
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,NAV_DATA,ECallTriggered,LTE_Modem;Telematics_Control_Unit,FR_INFO_017
+Infotainment_Domain_Ctrl -> Instrument_Cluster,NAV_DATA,GPSSpeed,Instrument_Cluster,FR_INFO_017
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit,NAV_DATA,GPSLatitude,Telematics_Control_Unit,FR_INFO_017
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,NAV_DATA,NavTurnDistance,Voice_Assistant_Module;Infotainment_Head_Unit,FR_INFO_017
+Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,NAV_DATA,OdometerValue,Head_Up_Display;Instrument_Cluster,FR_INFO_017
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,NAV_DATA,NetworkSignal,eCall_Module,FR_INFO_017
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,NAV_DATA,VolumeLevel,Infotainment_Head_Unit,FR_INFO_017
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,NAV_DATA,HUDEnable,Infotainment_Head_Unit;Rear_Seat_Entertainment,FR_INFO_017
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,NAV_DATA,PhoneCallActive,Audio_Amplifier,FR_INFO_017
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,NAV_DATA,GPSLongitude,GNSS_Receiver;Telematics_Control_Unit,FR_INFO_017
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,NAV_DATA,VoiceCmdActive,LTE_Modem;Telematics_Control_Unit,FR_INFO_017
+Infotainment_Domain_Ctrl -> Instrument_Cluster,NAV_DATA,DisplayBrightness,Instrument_Cluster,FR_INFO_017
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit,NAV_DATA,ClockTime,Telematics_Control_Unit,FR_INFO_017
+Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,SUSPENSION_DATA,RideHeightFront,ABS_Module;Wheel_Speed_Sensor_FL,FR_CHAS_018
+Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,SUSPENSION_DATA,SteeringAngle,Brake_Booster_Ctrl,FR_CHAS_018
+Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,SUSPENSION_DATA,TirePressureFR,ABS_Module;Wheel_Speed_Sensor_RL,FR_CHAS_018
+Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,SUSPENSION_DATA,TirePressureRR,Wheel_Speed_Sensor_FR;ABS_Module,FR_CHAS_018
+Electronic_Stability_Ctrl -> ABS_Module,SUSPENSION_DATA,HillHoldActive,ABS_Module,FR_CHAS_018
+Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,SUSPENSION_DATA,BrakePressure,Yaw_Rate_Sensor,FR_CHAS_018
+Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,SUSPENSION_DATA,CaliperForceLeft,Wheel_Speed_Sensor_RR;ABS_Module,FR_CHAS_018
+Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,SUSPENSION_DATA,SteeringTorque,ABS_Module;Wheel_Speed_Sensor_FL,FR_CHAS_018
+Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,SUSPENSION_DATA,BrakePedalSwitch,Brake_Booster_Ctrl,FR_CHAS_018
+Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,SUSPENSION_DATA,WheelSpeedRL,Wheel_Speed_Sensor_RL;ABS_Module,FR_CHAS_018
+Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,SUSPENSION_DATA,LongitudinalAccel,Wheel_Speed_Sensor_FR;ABS_Module,FR_CHAS_018
+Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,CHARGE_STATUS,TorqueRequest,Battery_Thermal_Ctrl;Coolant_Pump_Ctrl,FR_POWE_019
+Battery_Management_System -> Cell_Monitor_Unit_1,CHARGE_STATUS,FuelLevel,Cell_Monitor_Unit_1,FR_POWE_019
+Battery_Management_System -> HV_Contactor_Ctrl,CHARGE_STATUS,RegenLevel,HV_Contactor_Ctrl,FR_POWE_019
+Battery_Management_System -> Cell_Monitor_Unit_3,CHARGE_STATUS,BatterySOC,Cell_Monitor_Unit_3,FR_POWE_019
+Battery_Management_System -> Cell_Monitor_Unit_2,CHARGE_STATUS,PlugLockStatus,Cell_Monitor_Unit_2,FR_POWE_019
+Battery_Management_System -> Battery_Thermal_Ctrl,CHARGE_STATUS,TargetGear,Battery_Thermal_Ctrl,FR_POWE_019
+Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,CHARGE_STATUS,ThrottlePosition,Battery_Thermal_Ctrl;Coolant_Pump_Ctrl,FR_POWE_019
+Battery_Management_System -> Cell_Monitor_Unit_1,CHARGE_STATUS,ContactorState,Cell_Monitor_Unit_1,FR_POWE_019
+Battery_Management_System -> HV_Contactor_Ctrl,CHARGE_STATUS,ExhaustTemp,HV_Contactor_Ctrl,FR_POWE_019
+Battery_Management_System -> Cell_Monitor_Unit_3,CHARGE_STATUS,PackVoltage,Cell_Monitor_Unit_3,FR_POWE_019
+Battery_Management_System -> Cell_Monitor_Unit_2,CHARGE_STATUS,CellTempMin,Cell_Monitor_Unit_2,FR_POWE_019
+Battery_Management_System -> Battery_Thermal_Ctrl,CHARGE_STATUS,ChargeCurrent,Battery_Thermal_Ctrl,FR_POWE_019
+Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,CHARGE_STATUS,CoolantTemp,Coolant_Pump_Ctrl,FR_POWE_019
+Battery_Management_System -> Cell_Monitor_Unit_1,CHARGE_STATUS,ClutchPosition,Cell_Monitor_Unit_1,FR_POWE_019
+Battery_Management_System -> HV_Contactor_Ctrl,CHARGE_STATUS,BoostPressure,HV_Contactor_Ctrl,FR_POWE_019
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Gear_Selector_Module,TORQUE_CTRL,CoolantPumpDuty,Transmission_Control_Module;Gear_Selector_Module,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Cell_Monitor_Unit_1,TORQUE_CTRL,IgnitionAngle,Battery_Management_System;Powertrain_Domain_Ctrl;Cell_Monitor_Unit_1,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module,TORQUE_CTRL,FuelLevel,Engine_Control_Module;Powertrain_Domain_Ctrl,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,TORQUE_CTRL,ActualTorque,Fuel_Injection_Ctrl;Fuel_Pump_Ctrl,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,TORQUE_CTRL,LambdaValue,Engine_Control_Module;Powertrain_Domain_Ctrl;Ignition_Ctrl;Coil_Driver_Unit,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger,TORQUE_CTRL,CellTempMax,Onboard_Charger;Powertrain_Domain_Ctrl,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,TORQUE_CTRL,CoolantTemp,Fuel_Injection_Ctrl;Engine_Control_Module;Injector_Driver_Bank2,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> HV_Contactor_Ctrl,TORQUE_CTRL,MotorSpeedRear,HV_Contactor_Ctrl,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,TORQUE_CTRL,ChargeState,Engine_Control_Module;Boost_Pressure_Sensor,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl,TORQUE_CTRL,ContactorState,Transmission_Control_Module;Powertrain_Domain_Ctrl;Clutch_Actuator_Ctrl,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank1,TORQUE_CTRL,BatterySOH,Fuel_Injection_Ctrl;Engine_Control_Module;Injector_Driver_Bank1,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl,TORQUE_CTRL,IntakeAirTemp,Engine_Control_Module;Powertrain_Domain_Ctrl;Fuel_Injection_Ctrl,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl -> Charge_Lock_Actuator,TORQUE_CTRL,PedalPosition,Charge_Lock_Actuator;Onboard_Charger,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Gear_Selector_Module,TORQUE_CTRL,CellTempMin,Transmission_Control_Module;Gear_Selector_Module;Powertrain_Domain_Ctrl,FR_POWE_020
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Cell_Monitor_Unit_1,TORQUE_CTRL,EngineSpeed,Battery_Management_System;Powertrain_Domain_Ctrl;Cell_Monitor_Unit_1,FR_POWE_020
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,HMI_CTRL,GPSLongitude,Infotainment_Head_Unit;Audio_Amplifier,FR_INFO_021
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit,HMI_CTRL,NavGuidanceActive,Telematics_Control_Unit,FR_INFO_021
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,HMI_CTRL,NetworkSignal,LTE_Modem,FR_INFO_021
+Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,HMI_CTRL,GPSSpeed,Instrument_Cluster;Head_Up_Display,FR_INFO_021
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,HMI_CTRL,ClockTime,Telematics_Control_Unit;eCall_Module,FR_INFO_021
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,HMI_CTRL,RearScreenPower,Infotainment_Head_Unit;Rear_Seat_Entertainment,FR_INFO_021
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,HMI_CTRL,PhoneCallActive,GNSS_Receiver;Telematics_Control_Unit,FR_INFO_021
+Infotainment_Domain_Ctrl -> Instrument_Cluster,HMI_CTRL,VolumeLevel,Instrument_Cluster,FR_INFO_021
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,HMI_CTRL,NavTurnDistance,Infotainment_Head_Unit,FR_INFO_021
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,HMI_CTRL,GPSLatitude,Audio_Amplifier;Infotainment_Head_Unit,FR_INFO_021
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit,HMI_CTRL,OTAUpdateStatus,Telematics_Control_Unit,FR_INFO_021
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,HMI_CTRL,DisplayBrightness,Telematics_Control_Unit;LTE_Modem,FR_INFO_021
+Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,HMI_CTRL,AudioSource,Head_Up_Display;Instrument_Cluster,FR_INFO_021
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,HMI_CTRL,OdometerValue,Telematics_Control_Unit;eCall_Module,FR_INFO_021
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,HMI_CTRL,HUDEnable,Rear_Seat_Entertainment;Infotainment_Head_Unit,FR_INFO_021
+Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,HMI_CTRL,ClusterTheme,Telematics_Control_Unit;GNSS_Receiver,FR_INFO_021
+Infotainment_Domain_Ctrl -> Instrument_Cluster,HMI_CTRL,VoiceCmdActive,Instrument_Cluster,FR_INFO_021
+Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,HMI_CTRL,MediaTrackId,Infotainment_Head_Unit,FR_INFO_021
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,HMI_CTRL,PhoneCallActive,Head_Up_Display;Instrument_Cluster,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,HMI_CTRL,GPSLatitude,Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,HMI_CTRL,AudioSource,eCall_Module;Infotainment_Domain_Ctrl,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,HMI_CTRL,ClusterTheme,LTE_Modem;Telematics_Control_Unit;Infotainment_Domain_Ctrl,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,HMI_CTRL,ECallTriggered,Audio_Amplifier;Infotainment_Domain_Ctrl,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,HMI_CTRL,OutsideTempDisplay,Infotainment_Domain_Ctrl;Infotainment_Head_Unit,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,HMI_CTRL,VolumeLevel,Infotainment_Head_Unit;Voice_Assistant_Module,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl,HMI_CTRL,NetworkSignal,Infotainment_Domain_Ctrl,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,HMI_CTRL,NavGuidanceActive,Instrument_Cluster;Infotainment_Domain_Ctrl,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,HMI_CTRL,NavTurnDistance,Infotainment_Domain_Ctrl;Telematics_Control_Unit;GNSS_Receiver,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,HMI_CTRL,GPSSpeed,Infotainment_Head_Unit;Rear_Seat_Entertainment,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,HMI_CTRL,MediaTrackId,Head_Up_Display,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,HMI_CTRL,GPSLongitude,Telematics_Control_Unit;Infotainment_Domain_Ctrl,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,HMI_CTRL,VoiceCmdActive,Infotainment_Domain_Ctrl;eCall_Module,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,HMI_CTRL,HUDEnable,LTE_Modem;Telematics_Control_Unit,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,HMI_CTRL,RearScreenPower,Infotainment_Domain_Ctrl;Infotainment_Head_Unit;Audio_Amplifier,FR_INFO_022
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,HMI_CTRL,OdometerValue,Infotainment_Head_Unit;Infotainment_Domain_Ctrl,FR_INFO_022
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Parking_Brake,TPMS_DATA,LongitudinalAccel,Electric_Parking_Brake;Chassis_Domain_Ctrl,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,TPMS_DATA,WheelSpeedRL,ABS_Module;Chassis_Domain_Ctrl;Electronic_Stability_Ctrl;Wheel_Speed_Sensor_FL,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,TPMS_DATA,WheelSpeedRR,Tire_Pressure_Monitor,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_L,TPMS_DATA,BrakePressure,Brake_Caliper_Actuator_L;Electric_Parking_Brake,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,TPMS_DATA,LateralAccel,Chassis_Domain_Ctrl;Electronic_Stability_Ctrl;Wheel_Speed_Sensor_RR,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,TPMS_DATA,YawRate,Chassis_Domain_Ctrl;Air_Suspension_Ctrl;Height_Sensor_Rear,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl,TPMS_DATA,CaliperForceRight,Chassis_Domain_Ctrl;Air_Suspension_Ctrl,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,TPMS_DATA,HillHoldActive,ABS_Module;Chassis_Domain_Ctrl;Wheel_Speed_Sensor_RL,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,TPMS_DATA,WheelSpeedFR,Chassis_Domain_Ctrl;Air_Suspension_Ctrl;Height_Sensor_Front,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Parking_Brake,TPMS_DATA,TirePressureRL,Chassis_Domain_Ctrl;Electric_Parking_Brake,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,TPMS_DATA,RideHeightRear,Electronic_Stability_Ctrl;Wheel_Speed_Sensor_FL;ABS_Module,FR_CHAS_023
+Central_Gateway -> Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,TPMS_DATA,RideHeightFront,Chassis_Domain_Ctrl;Tire_Pressure_Monitor,FR_CHAS_023
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,TRANS_DATA,ChargeCurrent,Engine_Control_Module;Fuel_Pump_Ctrl,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl,TRANS_DATA,ContactorState,Onboard_Charger;Charge_Port_Ctrl,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Turbo_Ctrl,TRANS_DATA,ThrottlePosition,Turbo_Ctrl,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module,TRANS_DATA,RegenLevel,Powertrain_Domain_Ctrl;Engine_Control_Module,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Knock_Sensor_Module,TRANS_DATA,OilPressure,Knock_Sensor_Module;Ignition_Ctrl;Engine_Control_Module,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Cell_Monitor_Unit_3,TRANS_DATA,CurrentGear,Cell_Monitor_Unit_3,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module,TRANS_DATA,CoolantPumpDuty,Powertrain_Domain_Ctrl;Transmission_Control_Module,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Front,TRANS_DATA,PackVoltage,Traction_Inverter_Ctrl;Powertrain_Domain_Ctrl;Motor_Ctrl_Front,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl,TRANS_DATA,PedalPosition,Powertrain_Domain_Ctrl;Clutch_Actuator_Ctrl,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,TRANS_DATA,ClutchPosition,Coolant_Pump_Ctrl;Powertrain_Domain_Ctrl,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System,TRANS_DATA,IntakeAirTemp,Powertrain_Domain_Ctrl;Battery_Management_System,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl -> Charge_Lock_Actuator,TRANS_DATA,BoostPressure,Powertrain_Domain_Ctrl;Charge_Lock_Actuator,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger,TRANS_DATA,IdleStopActive,Powertrain_Domain_Ctrl;Onboard_Charger,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,TRANS_DATA,CellTempMax,Fuel_Injection_Ctrl;Fuel_Pump_Ctrl;Powertrain_Domain_Ctrl,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl,TRANS_DATA,FuelRate,Onboard_Charger;Powertrain_Domain_Ctrl;Charge_Port_Ctrl,FR_POWE_024
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Turbo_Ctrl,TRANS_DATA,ExhaustTemp,Turbo_Ctrl,FR_POWE_024
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,ACC_STATUS,RadarBlocked,Ultrasonic_Sensor_Rear;Park_Assist_Ctrl,FR_ADAS_025
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Traffic_Sign_Recognition,ACC_STATUS,DriverDrowsiness,Front_Camera_Module;Traffic_Sign_Recognition,FR_ADAS_025
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,ACC_STATUS,CrossTrafficAlert,Park_Assist_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_025
+ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,ACC_STATUS,BlindSpotLeft,Blind_Spot_Monitor_L;Corner_Radar_RL,FR_ADAS_025
+ADAS_Domain_Ctrl -> Front_Camera_Module,ACC_STATUS,ParkDistanceRear,Front_Camera_Module,FR_ADAS_025
+ADAS_Domain_Ctrl -> Corner_Radar_RL,ACC_STATUS,AEBBrakeRequest,Corner_Radar_RL,FR_ADAS_025
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,ACC_STATUS,CameraBlocked,Front_Radar;Adaptive_Cruise_Ctrl;Auto_Emergency_Brake,FR_ADAS_025
+ADAS_Domain_Ctrl -> Front_Radar,ACC_STATUS,LeadVehicleSpeed,Front_Radar,FR_ADAS_025
+ADAS_Domain_Ctrl -> Driver_Monitor_Camera,ACC_STATUS,SpeedLimitDetected,Driver_Monitor_Camera,FR_ADAS_025
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,ACC_STATUS,ACCSetSpeed,Adaptive_Cruise_Ctrl,FR_ADAS_025
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,ACC_STATUS,ObjectCountFront,Surround_View_Camera,FR_ADAS_025
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,ACC_STATUS,ParkDistanceFront,Corner_Radar_RR;Blind_Spot_Monitor_R,FR_ADAS_025
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,ACC_STATUS,ACCTargetDistance,Park_Assist_Ctrl,FR_ADAS_025
+ADAS_Domain_Ctrl -> Corner_Radar_RR,ACC_STATUS,LaneDepartureWarn,Corner_Radar_RR,FR_ADAS_025
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,ACC_STATUS,LeadVehicleDistance,Front_Camera_Module;Lane_Keep_Assist,FR_ADAS_025
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RL,CLIMATE_DATA,HeadlampStatus,Door_Ctrl_RL;Body_Domain_Ctrl;Body_Control_Module,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Keyless_Entry_Module -> Immobilizer,CLIMATE_DATA,DoorOpenRR,Keyless_Entry_Module;Body_Domain_Ctrl;Immobilizer,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Occupant_Detection_Sensor,CLIMATE_DATA,DoorOpenFR,Seat_Ctrl_Passenger;Body_Domain_Ctrl;Occupant_Detection_Sensor,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl,CLIMATE_DATA,WindowPositionRR,Body_Domain_Ctrl,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR,CLIMATE_DATA,BrakeLampActive,Body_Control_Module;Body_Domain_Ctrl;Door_Ctrl_FR,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Airbag_Control_Unit,CLIMATE_DATA,SeatHeaterLevel,Airbag_Control_Unit;Body_Domain_Ctrl,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_R,CLIMATE_DATA,ACCompressorOn,Airbag_Control_Unit;Crash_Sensor_Side_R;Body_Domain_Ctrl,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,CLIMATE_DATA,AmbientLightColor,Body_Domain_Ctrl;Body_Control_Module;Window_Lift_Motor_FR,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Seat_Ctrl_Passenger,CLIMATE_DATA,DoorOpenRL,Body_Domain_Ctrl;Seat_Ctrl_Passenger,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,CLIMATE_DATA,CrashDetected,Door_Ctrl_FL;Body_Domain_Ctrl;Mirror_Ctrl_L,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl,CLIMATE_DATA,WiperSpeed,Wiper_Ctrl;Body_Control_Module,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> Seat_Ctrl_Driver,CLIMATE_DATA,CabinTemp,Body_Domain_Ctrl;Seat_Ctrl_Driver,FR_BODY_026
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl,CLIMATE_DATA,DoorOpenFL,HVAC_Ctrl;Body_Domain_Ctrl,FR_BODY_026
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,SUSPENSION_DATA,BrakePedalSwitch,Wheel_Speed_Sensor_FL;ABS_Module,FR_CHAS_027
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Air_Compressor_Ctrl,SUSPENSION_DATA,ParkBrakeState,Air_Compressor_Ctrl;Air_Suspension_Ctrl,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module,SUSPENSION_DATA,RideHeightRear,ABS_Module;Electronic_Stability_Ctrl,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Angle_Sensor,SUSPENSION_DATA,BrakePressure,Steering_Angle_Sensor;Electric_Power_Steering,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,SUSPENSION_DATA,WheelSpeedFL,ABS_Module;Electronic_Stability_Ctrl;Wheel_Speed_Sensor_FR,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl,SUSPENSION_DATA,TirePressureFL,Electronic_Stability_Ctrl,FR_CHAS_027
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,SUSPENSION_DATA,LateralAccel,Height_Sensor_Front;Air_Suspension_Ctrl,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_R,SUSPENSION_DATA,ABSActive,Electric_Parking_Brake;Brake_Caliper_Actuator_R,FR_CHAS_027
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,SUSPENSION_DATA,SteeringAngle,Height_Sensor_Rear;Air_Suspension_Ctrl,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,SUSPENSION_DATA,TirePressureRR,Wheel_Speed_Sensor_RR;ABS_Module,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,SUSPENSION_DATA,ESCActive,Wheel_Speed_Sensor_FL,FR_CHAS_027
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Air_Compressor_Ctrl,SUSPENSION_DATA,TractionCtrlActive,Air_Compressor_Ctrl;Air_Suspension_Ctrl,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module,SUSPENSION_DATA,WheelSpeedRL,ABS_Module,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Angle_Sensor,SUSPENSION_DATA,SteeringTorque,Steering_Angle_Sensor;Electric_Power_Steering,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,SUSPENSION_DATA,YawRate,Electronic_Stability_Ctrl;Wheel_Speed_Sensor_FR;ABS_Module,FR_CHAS_027
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl,SUSPENSION_DATA,TirePressureFR,Electronic_Stability_Ctrl,FR_CHAS_027
+Battery_Management_System -> Cell_Monitor_Unit_2,TORQUE_CTRL,MotorSpeedRear,Cell_Monitor_Unit_2,FR_POWE_028
+Battery_Management_System -> Battery_Thermal_Ctrl,TORQUE_CTRL,IdleStopActive,Battery_Thermal_Ctrl,FR_POWE_028
+Battery_Management_System -> HV_Contactor_Ctrl,TORQUE_CTRL,InverterTemp,HV_Contactor_Ctrl,FR_POWE_028
+Battery_Management_System -> Cell_Monitor_Unit_1,TORQUE_CTRL,OilPressure,Cell_Monitor_Unit_1,FR_POWE_028
+Battery_Management_System -> Cell_Monitor_Unit_3,TORQUE_CTRL,CellTempMax,Cell_Monitor_Unit_3,FR_POWE_028
+Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,TORQUE_CTRL,FuelRate,Coolant_Pump_Ctrl;Battery_Thermal_Ctrl,FR_POWE_028
+Battery_Management_System -> Cell_Monitor_Unit_2,TORQUE_CTRL,ContactorState,Cell_Monitor_Unit_2,FR_POWE_028
+Battery_Management_System -> Battery_Thermal_Ctrl,TORQUE_CTRL,ActualTorque,Battery_Thermal_Ctrl,FR_POWE_028
+Battery_Management_System -> HV_Contactor_Ctrl,TORQUE_CTRL,TargetGear,HV_Contactor_Ctrl,FR_POWE_028
+Battery_Management_System -> Cell_Monitor_Unit_1,TORQUE_CTRL,ChargeCurrent,Cell_Monitor_Unit_1,FR_POWE_028
+Battery_Management_System -> Cell_Monitor_Unit_3,TORQUE_CTRL,PlugLockStatus,Cell_Monitor_Unit_3,FR_POWE_028
+Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,TORQUE_CTRL,PedalPosition,Coolant_Pump_Ctrl;Battery_Thermal_Ctrl,FR_POWE_028
+Battery_Management_System -> Cell_Monitor_Unit_2,TORQUE_CTRL,PackCurrent,Cell_Monitor_Unit_2,FR_POWE_028
+Battery_Management_System -> Battery_Thermal_Ctrl,TORQUE_CTRL,ExhaustTemp,Battery_Thermal_Ctrl,FR_POWE_028
+Battery_Management_System -> HV_Contactor_Ctrl,TORQUE_CTRL,BatterySOH,HV_Contactor_Ctrl,FR_POWE_028
+Battery_Management_System -> Cell_Monitor_Unit_1,TORQUE_CTRL,ChargeState,Cell_Monitor_Unit_1,FR_POWE_028
+Battery_Management_System -> Cell_Monitor_Unit_3,TORQUE_CTRL,ClutchPosition,Cell_Monitor_Unit_3,FR_POWE_028
+Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,TORQUE_CTRL,CurrentGear,Battery_Thermal_Ctrl;Coolant_Pump_Ctrl,FR_POWE_028
+Battery_Management_System -> Cell_Monitor_Unit_2,TORQUE_CTRL,BoostPressure,Cell_Monitor_Unit_2,FR_POWE_028
+Battery_Management_System -> Battery_Thermal_Ctrl,TORQUE_CTRL,KnockLevel,Battery_Thermal_Ctrl,FR_POWE_028
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl,ENGINE_DATA,CellTempMax,Transmission_Control_Module;Clutch_Actuator_Ctrl,FR_POWE_029
+Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl,ENGINE_DATA,ChargeState,Charge_Port_Ctrl;Onboard_Charger,FR_POWE_029
+Powertrain_Domain_Ctrl -> Engine_Control_Module,ENGINE_DATA,LambdaValue,Engine_Control_Module,FR_POWE_029
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Turbo_Ctrl -> Wastegate_Actuator,ENGINE_DATA,ChargeCurrent,Turbo_Ctrl;Wastegate_Actuator,FR_POWE_029
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Torque_Converter_Ctrl,ENGINE_DATA,InverterTemp,Transmission_Control_Module;Torque_Converter_Ctrl,FR_POWE_029
+Powertrain_Domain_Ctrl -> Battery_Management_System,ENGINE_DATA,TorqueRequest,Battery_Management_System,FR_POWE_029
+Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Rear -> Resolver_Rear,ENGINE_DATA,PedalPosition,Traction_Inverter_Ctrl;Resolver_Rear,FR_POWE_029
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Gear_Selector_Module,ENGINE_DATA,PackCurrent,Transmission_Control_Module;Gear_Selector_Module,FR_POWE_029
+Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Rear,ENGINE_DATA,OilPressure,Motor_Ctrl_Rear;Traction_Inverter_Ctrl,FR_POWE_029
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,ENGINE_DATA,FuelRate,Engine_Control_Module;Fuel_Injection_Ctrl;Fuel_Pump_Ctrl,FR_POWE_029
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl,ENGINE_DATA,CurrentGear,Clutch_Actuator_Ctrl,FR_POWE_029
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,LANE_DATA,RadarBlocked,Lane_Keep_Assist,FR_ADAS_030
+ADAS_Domain_Ctrl -> Corner_Radar_RR,LANE_DATA,AEBBrakeRequest,Corner_Radar_RR,FR_ADAS_030
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,LANE_DATA,LeadVehicleSpeed,Park_Assist_Ctrl,FR_ADAS_030
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Traffic_Sign_Recognition,LANE_DATA,SurroundViewActive,Front_Camera_Module;Traffic_Sign_Recognition,FR_ADAS_030
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,LANE_DATA,LaneDepartureWarn,Blind_Spot_Monitor_R;Corner_Radar_RR,FR_ADAS_030
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,LANE_DATA,AEBWarning,Park_Assist_Ctrl;Ultrasonic_Sensor_Rear,FR_ADAS_030
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,LANE_DATA,BlindSpotRight,Park_Assist_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_030
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,LANE_DATA,CrossTrafficAlert,Surround_View_Camera,FR_ADAS_030
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,LANE_DATA,ACCTargetDistance,Adaptive_Cruise_Ctrl;Auto_Emergency_Brake,FR_ADAS_030
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,LANE_DATA,ObjectCountFront,Front_Radar;Adaptive_Cruise_Ctrl,FR_ADAS_030
+ADAS_Domain_Ctrl -> Corner_Radar_RL,LANE_DATA,ParkDistanceFront,Corner_Radar_RL,FR_ADAS_030
+ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,LANE_DATA,DriverDrowsiness,Blind_Spot_Monitor_L;Corner_Radar_RL,FR_ADAS_030
+ADAS_Domain_Ctrl -> Front_Radar,LANE_DATA,ACCSetSpeed,Front_Radar,FR_ADAS_030
+ADAS_Domain_Ctrl -> Front_Camera_Module,LANE_DATA,CameraBlocked,Front_Camera_Module,FR_ADAS_030
+ADAS_Domain_Ctrl -> Driver_Monitor_Camera,LANE_DATA,LeadVehicleDistance,Driver_Monitor_Camera,FR_ADAS_030
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,LANE_DATA,ParkDistanceRear,Lane_Keep_Assist;Front_Camera_Module,FR_ADAS_030
+ADAS_Domain_Ctrl -> Corner_Radar_RR,LANE_DATA,SpeedLimitDetected,Corner_Radar_RR,FR_ADAS_030
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,LANE_DATA,LaneKeepTorque,Park_Assist_Ctrl,FR_ADAS_030
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Traffic_Sign_Recognition,LANE_DATA,DriverDistracted,Traffic_Sign_Recognition;Front_Camera_Module,FR_ADAS_030
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,LANE_DATA,BlindSpotLeft,Blind_Spot_Monitor_R,FR_ADAS_030
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger,TRANS_DATA,ChargeState,Onboard_Charger;Powertrain_Domain_Ctrl,FR_POWE_031
+Central_Gateway -> Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Rear -> Resolver_Rear,TRANS_DATA,ThrottlePosition,Powertrain_Domain_Ctrl;Resolver_Rear,FR_POWE_031
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Torque_Converter_Ctrl,TRANS_DATA,ClutchPosition,Transmission_Control_Module;Torque_Converter_Ctrl,FR_POWE_031
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl -> Clutch_Position_Sensor,TRANS_DATA,MotorSpeedRear,Clutch_Actuator_Ctrl;Powertrain_Domain_Ctrl;Clutch_Position_Sensor,FR_POWE_031
+Central_Gateway -> Powertrain_Domain_Ctrl,TRANS_DATA,PackVoltage,Powertrain_Domain_Ctrl,FR_POWE_031
+Central_Gateway -> Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Front,TRANS_DATA,IntakeAirTemp,Powertrain_Domain_Ctrl;Motor_Ctrl_Front;Traction_Inverter_Ctrl,FR_POWE_031
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank1,TRANS_DATA,OilPressure,Fuel_Injection_Ctrl;Injector_Driver_Bank1,FR_POWE_031
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,TRANS_DATA,CoolantPumpDuty,Boost_Pressure_Sensor;Powertrain_Domain_Ctrl,FR_POWE_031
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,TRANS_DATA,BatterySOH,Engine_Control_Module;Injector_Driver_Bank2;Fuel_Injection_Ctrl,FR_POWE_031
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,TRANS_DATA,ActualTorque,Coil_Driver_Unit,FR_POWE_031
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,LANE_DATA,RadarBlocked,Corner_Radar_RR;Blind_Spot_Monitor_R,FR_ADAS_032
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,LANE_DATA,BlindSpotLeft,Auto_Emergency_Brake,FR_ADAS_032
+ADAS_Domain_Ctrl -> Corner_Radar_RR,LANE_DATA,LaneDepartureWarn,Corner_Radar_RR,FR_ADAS_032
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,LANE_DATA,DriverDistracted,Park_Assist_Ctrl;Ultrasonic_Sensor_Rear,FR_ADAS_032
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,LANE_DATA,AEBBrakeRequest,Ultrasonic_Sensor_Front;Park_Assist_Ctrl,FR_ADAS_032
+ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,LANE_DATA,BlindSpotRight,Blind_Spot_Monitor_L,FR_ADAS_032
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,LANE_DATA,ParkDistanceRear,Front_Radar;Adaptive_Cruise_Ctrl,FR_ADAS_032
+ADAS_Domain_Ctrl -> Driver_Monitor_Camera,LANE_DATA,SurroundViewActive,Driver_Monitor_Camera,FR_ADAS_032
+ADAS_Domain_Ctrl -> Corner_Radar_RL,LANE_DATA,CrossTrafficAlert,Corner_Radar_RL,FR_ADAS_032
+ADAS_Domain_Ctrl -> Front_Camera_Module,LANE_DATA,ParkDistanceFront,Front_Camera_Module,FR_ADAS_032
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Traffic_Sign_Recognition,LANE_DATA,ACCSetSpeed,Front_Camera_Module;Traffic_Sign_Recognition,FR_ADAS_032
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,LANE_DATA,CameraBlocked,Park_Assist_Ctrl,FR_ADAS_032
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,LANE_DATA,AEBWarning,Blind_Spot_Monitor_R;Corner_Radar_RR,FR_ADAS_032
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,LANE_DATA,LaneKeepTorque,Adaptive_Cruise_Ctrl;Auto_Emergency_Brake,FR_ADAS_032
+ADAS_Domain_Ctrl -> Corner_Radar_RR,LANE_DATA,ACCTargetDistance,Corner_Radar_RR,FR_ADAS_032
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,LANE_DATA,LeadVehicleDistance,Ultrasonic_Sensor_Rear;Park_Assist_Ctrl,FR_ADAS_032
+ADAS_Domain_Ctrl -> Front_Radar,LANE_DATA,CameraBlocked,Front_Radar,FR_ADAS_033
+ADAS_Domain_Ctrl -> Driver_Monitor_Camera,LANE_DATA,ParkDistanceRear,Driver_Monitor_Camera,FR_ADAS_033
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,LANE_DATA,RadarBlocked,Front_Radar;Adaptive_Cruise_Ctrl,FR_ADAS_033
+ADAS_Domain_Ctrl -> Corner_Radar_RR,LANE_DATA,ParkDistanceFront,Corner_Radar_RR,FR_ADAS_033
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,LANE_DATA,ACCTargetDistance,Park_Assist_Ctrl;Ultrasonic_Sensor_Rear,FR_ADAS_033
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,LANE_DATA,DriverDistracted,Surround_View_Camera,FR_ADAS_033
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,LANE_DATA,LaneDepartureWarn,Park_Assist_Ctrl,FR_ADAS_033
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,LANE_DATA,DriverDrowsiness,Park_Assist_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_033
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,LANE_DATA,ObjectCountFront,Auto_Emergency_Brake,FR_ADAS_033
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,LANE_DATA,LaneKeepTorque,Lane_Keep_Assist,FR_ADAS_033
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,LANE_DATA,LeadVehicleDistance,Blind_Spot_Monitor_R;Corner_Radar_RR,FR_ADAS_033
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Traffic_Sign_Recognition,LANE_DATA,AEBWarning,Front_Camera_Module;Traffic_Sign_Recognition,FR_ADAS_033
+ADAS_Domain_Ctrl -> Corner_Radar_RL,LANE_DATA,CrossTrafficAlert,Corner_Radar_RL,FR_ADAS_033
+ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,LANE_DATA,BlindSpotLeft,Corner_Radar_RL;Blind_Spot_Monitor_L,FR_ADAS_033
+ADAS_Domain_Ctrl -> Front_Camera_Module,LANE_DATA,ACCSetSpeed,Front_Camera_Module,FR_ADAS_033
+ADAS_Domain_Ctrl -> Front_Radar,LANE_DATA,BlindSpotRight,Front_Radar,FR_ADAS_033
+ADAS_Domain_Ctrl -> Driver_Monitor_Camera,LANE_DATA,AEBBrakeRequest,Driver_Monitor_Camera,FR_ADAS_033
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,LANE_DATA,SpeedLimitDetected,Front_Radar;Adaptive_Cruise_Ctrl,FR_ADAS_033
+ADAS_Domain_Ctrl -> Corner_Radar_RR,LANE_DATA,LeadVehicleSpeed,Corner_Radar_RR,FR_ADAS_033
+Central_Gateway -> Body_Domain_Ctrl,SEAT_CTRL,AirbagDeployCmd,Body_Domain_Ctrl,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl,SEAT_CTRL,RainIntensity,Body_Domain_Ctrl;HVAC_Ctrl,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,SEAT_CTRL,AmbientLightColor,Window_Lift_Motor_FR;Body_Control_Module;Door_Ctrl_FR,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> Cabin_Temp_Sensor,SEAT_CTRL,MirrorFoldCmd,HVAC_Ctrl;Cabin_Temp_Sensor,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl -> Rain_Light_Sensor,SEAT_CTRL,WindowPositionRL,Body_Domain_Ctrl;Rain_Light_Sensor;Wiper_Ctrl,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,SEAT_CTRL,DoorOpenRR,Lighting_Ctrl;Body_Domain_Ctrl;Headlamp_Ctrl_R,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> Blower_Motor_Ctrl,SEAT_CTRL,HighBeamActive,HVAC_Ctrl;Blower_Motor_Ctrl,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl,SEAT_CTRL,WindowPositionFR,Body_Domain_Ctrl;Body_Control_Module;Wiper_Ctrl,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl,SEAT_CTRL,SeatbeltStatus,Body_Domain_Ctrl,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl,SEAT_CTRL,SeatHeaterLevel,Body_Domain_Ctrl;HVAC_Ctrl,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,SEAT_CTRL,TailgateOpen,Door_Ctrl_FR;Window_Lift_Motor_FR;Body_Domain_Ctrl,FR_BODY_034
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> Cabin_Temp_Sensor,SEAT_CTRL,OccupantPresent,Cabin_Temp_Sensor,FR_BODY_034
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,TELEMATICS_DATA,OTAUpdateStatus,Audio_Amplifier;Infotainment_Head_Unit;Infotainment_Domain_Ctrl,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,TELEMATICS_DATA,GPSSpeed,Infotainment_Domain_Ctrl;Head_Up_Display;Instrument_Cluster,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,TELEMATICS_DATA,NetworkSignal,GNSS_Receiver;Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,TELEMATICS_DATA,RearScreenPower,Voice_Assistant_Module;Infotainment_Head_Unit,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,TELEMATICS_DATA,HUDEnable,Infotainment_Domain_Ctrl;Instrument_Cluster,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl,TELEMATICS_DATA,ECallTriggered,Infotainment_Domain_Ctrl,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,TELEMATICS_DATA,NavGuidanceActive,LTE_Modem,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,TELEMATICS_DATA,GPSLongitude,Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,TELEMATICS_DATA,GPSLatitude,Rear_Seat_Entertainment,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,TELEMATICS_DATA,AudioSource,Telematics_Control_Unit;Infotainment_Domain_Ctrl;eCall_Module,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,TELEMATICS_DATA,VoiceCmdActive,Infotainment_Head_Unit;Infotainment_Domain_Ctrl,FR_INFO_035
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,TELEMATICS_DATA,ClusterTheme,Infotainment_Domain_Ctrl;Infotainment_Head_Unit;Audio_Amplifier,FR_INFO_035
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,DOOR_STATUS,DoorOpenFR,Body_Control_Module;Lighting_Ctrl;Headlamp_Ctrl_R,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR,DOOR_STATUS,HeadlampStatus,Door_Ctrl_FR,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,DOOR_STATUS,BrakeLampActive,Body_Control_Module;Window_Lift_Motor_FL;Door_Ctrl_FL,FR_BODY_036
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Occupant_Detection_Sensor,DOOR_STATUS,WindowPositionFR,Occupant_Detection_Sensor,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl,DOOR_STATUS,KeyFobDetected,Lighting_Ctrl;Body_Control_Module,FR_BODY_036
+Body_Domain_Ctrl -> Seat_Ctrl_Driver,DOOR_STATUS,WindowPositionFL,Seat_Ctrl_Driver,FR_BODY_036
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Front,DOOR_STATUS,SeatHeaterLevel,Crash_Sensor_Front;Airbag_Control_Unit,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl -> Rain_Light_Sensor,DOOR_STATUS,CentralLockState,Body_Control_Module;Rain_Light_Sensor,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,DOOR_STATUS,AirbagDeployCmd,Headlamp_Ctrl_R,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR,DOOR_STATUS,TurnIndicatorLeft,Body_Control_Module;Door_Ctrl_FR,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,DOOR_STATUS,TurnIndicatorRight,Body_Control_Module;Window_Lift_Motor_FL,FR_BODY_036
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Occupant_Detection_Sensor,DOOR_STATUS,AmbientLightColor,Seat_Ctrl_Passenger;Occupant_Detection_Sensor,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl,DOOR_STATUS,ACCompressorOn,Body_Control_Module;Lighting_Ctrl,FR_BODY_036
+Body_Domain_Ctrl -> Seat_Ctrl_Driver,DOOR_STATUS,CabinTemp,Seat_Ctrl_Driver,FR_BODY_036
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Front,DOOR_STATUS,DoorOpenRL,Crash_Sensor_Front;Airbag_Control_Unit,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl -> Rain_Light_Sensor,DOOR_STATUS,HighBeamActive,Body_Control_Module;Rain_Light_Sensor;Wiper_Ctrl,FR_BODY_036
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,DOOR_STATUS,BlowerLevel,Lighting_Ctrl;Body_Control_Module;Headlamp_Ctrl_R,FR_BODY_036
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Torque_Sensor,TPMS_DATA,SteeringTorque,Steering_Torque_Sensor;Electric_Power_Steering,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,TPMS_DATA,HillHoldActive,Electronic_Stability_Ctrl;Brake_Booster_Ctrl,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Angle_Sensor,TPMS_DATA,SuspensionMode,Steering_Angle_Sensor,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,TPMS_DATA,ESCActive,ABS_Module;Wheel_Speed_Sensor_RL,FR_CHAS_037
+Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,TPMS_DATA,TirePressureRL,Tire_Pressure_Monitor,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electric_Power_Steering,TPMS_DATA,SteeringAssistLevel,Electric_Power_Steering,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,TPMS_DATA,TirePressureRR,Wheel_Speed_Sensor_FR,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,TPMS_DATA,WheelSpeedRR,Electronic_Stability_Ctrl;Yaw_Rate_Sensor,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electric_Parking_Brake,TPMS_DATA,ABSActive,Electric_Parking_Brake,FR_CHAS_037
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Air_Compressor_Ctrl,TPMS_DATA,BoosterVacuum,Air_Suspension_Ctrl;Air_Compressor_Ctrl,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl,TPMS_DATA,YawRate,Electronic_Stability_Ctrl,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,TPMS_DATA,RideHeightRear,Electronic_Stability_Ctrl;ABS_Module;Wheel_Speed_Sensor_FL,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,TPMS_DATA,LongitudinalAccel,Electronic_Stability_Ctrl;Wheel_Speed_Sensor_RR,FR_CHAS_037
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl,TPMS_DATA,TirePressureFR,Air_Suspension_Ctrl,FR_CHAS_037
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,TPMS_DATA,WheelSpeedRL,Height_Sensor_Front;Air_Suspension_Ctrl,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_L,TPMS_DATA,TirePressureFL,Electric_Parking_Brake;Brake_Caliper_Actuator_L,FR_CHAS_037
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,TPMS_DATA,SteeringAngle,Height_Sensor_Rear,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Torque_Sensor,TPMS_DATA,WheelSpeedFR,Steering_Torque_Sensor;Electric_Power_Steering,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,TPMS_DATA,BrakePedalSwitch,Brake_Booster_Ctrl;Electronic_Stability_Ctrl,FR_CHAS_037
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Angle_Sensor,TPMS_DATA,VehicleSpeed,Steering_Angle_Sensor;Electric_Power_Steering,FR_CHAS_037
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Cell_Monitor_Unit_1,BATTERY_STATUS,IntakeAirTemp,Cell_Monitor_Unit_1;Battery_Management_System,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,BATTERY_STATUS,ClutchPosition,Engine_Control_Module;Turbo_Ctrl;Boost_Pressure_Sensor,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> HV_Contactor_Ctrl,BATTERY_STATUS,ContactorState,Powertrain_Domain_Ctrl;HV_Contactor_Ctrl,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Throttle_Body_Ctrl -> Pedal_Position_Sensor,BATTERY_STATUS,ActualTorque,Pedal_Position_Sensor;Powertrain_Domain_Ctrl;Throttle_Body_Ctrl,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl,BATTERY_STATUS,RegenLevel,Powertrain_Domain_Ctrl;Charge_Port_Ctrl;Onboard_Charger,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module,BATTERY_STATUS,PackCurrent,Engine_Control_Module,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Torque_Converter_Ctrl,BATTERY_STATUS,ChargeCurrent,Torque_Converter_Ctrl,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Knock_Sensor_Module,BATTERY_STATUS,KnockLevel,Powertrain_Domain_Ctrl;Knock_Sensor_Module,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Onboard_Charger,BATTERY_STATUS,BatterySOC,Powertrain_Domain_Ctrl;Onboard_Charger,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,BATTERY_STATUS,PackVoltage,Injector_Driver_Bank2,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl,BATTERY_STATUS,CellTempMin,Powertrain_Domain_Ctrl,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,BATTERY_STATUS,CoolantPumpDuty,Coil_Driver_Unit;Ignition_Ctrl;Engine_Control_Module,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl -> Clutch_Position_Sensor,BATTERY_STATUS,CurrentGear,Powertrain_Domain_Ctrl;Clutch_Position_Sensor,FR_POWE_038
+Central_Gateway -> Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Front,BATTERY_STATUS,BoostPressure,Motor_Ctrl_Front;Traction_Inverter_Ctrl;Powertrain_Domain_Ctrl,FR_POWE_038
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR,PARK_ASSIST,AEBBrakeRequest,Corner_Radar_RR;ADAS_Domain_Ctrl,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl,PARK_ASSIST,ParkDistanceFront,ADAS_Domain_Ctrl,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,PARK_ASSIST,CrossTrafficAlert,ADAS_Domain_Ctrl;Blind_Spot_Monitor_L;Corner_Radar_RL,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl,PARK_ASSIST,ParkDistanceRear,Park_Assist_Ctrl;ADAS_Domain_Ctrl,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,PARK_ASSIST,SpeedLimitDetected,ADAS_Domain_Ctrl;Blind_Spot_Monitor_R;Corner_Radar_RR,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,PARK_ASSIST,LeadVehicleDistance,Auto_Emergency_Brake;Front_Radar;ADAS_Domain_Ctrl,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,PARK_ASSIST,LeadVehicleSpeed,Lane_Keep_Assist,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module,PARK_ASSIST,AEBWarning,ADAS_Domain_Ctrl;Front_Camera_Module,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,PARK_ASSIST,BlindSpotLeft,ADAS_Domain_Ctrl;Ultrasonic_Sensor_Rear,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar,PARK_ASSIST,ACCSetSpeed,ADAS_Domain_Ctrl;Front_Radar,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL,PARK_ASSIST,BlindSpotRight,Corner_Radar_RL,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,PARK_ASSIST,ACCTargetDistance,Adaptive_Cruise_Ctrl,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR,PARK_ASSIST,LaneKeepTorque,Corner_Radar_RR,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl,PARK_ASSIST,DriverDrowsiness,ADAS_Domain_Ctrl,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,PARK_ASSIST,SurroundViewActive,Blind_Spot_Monitor_L;ADAS_Domain_Ctrl,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl,PARK_ASSIST,LaneDepartureWarn,ADAS_Domain_Ctrl;Park_Assist_Ctrl,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,PARK_ASSIST,CameraBlocked,ADAS_Domain_Ctrl;Blind_Spot_Monitor_R,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,PARK_ASSIST,ObjectCountFront,Front_Radar;ADAS_Domain_Ctrl;Auto_Emergency_Brake,FR_ADAS_039
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,AEB_STATUS,SpeedLimitDetected,ADAS_Domain_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Driver_Monitor_Camera,AEB_STATUS,CrossTrafficAlert,Driver_Monitor_Camera;ADAS_Domain_Ctrl,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,AEB_STATUS,AEBBrakeRequest,ADAS_Domain_Ctrl;Adaptive_Cruise_Ctrl,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl,AEB_STATUS,ACCTargetDistance,ADAS_Domain_Ctrl,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,AEB_STATUS,ParkDistanceRear,Corner_Radar_RR;Blind_Spot_Monitor_R,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar,AEB_STATUS,ParkDistanceFront,ADAS_Domain_Ctrl;Front_Radar,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL,AEB_STATUS,DriverDistracted,Corner_Radar_RL,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR,AEB_STATUS,BlindSpotRight,ADAS_Domain_Ctrl;Corner_Radar_RR,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module -> Traffic_Sign_Recognition,AEB_STATUS,RadarBlocked,ADAS_Domain_Ctrl;Front_Camera_Module;Traffic_Sign_Recognition,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,AEB_STATUS,LeadVehicleSpeed,Front_Camera_Module;ADAS_Domain_Ctrl;Lane_Keep_Assist,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl,AEB_STATUS,LeadVehicleDistance,ADAS_Domain_Ctrl;Park_Assist_Ctrl,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,AEB_STATUS,BlindSpotLeft,Corner_Radar_RL;ADAS_Domain_Ctrl;Blind_Spot_Monitor_L,FR_ADAS_040
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,AEB_STATUS,LaneKeepTorque,Park_Assist_Ctrl;Ultrasonic_Sensor_Rear,FR_ADAS_040
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,TPMS_DATA,RideHeightRear,Wheel_Speed_Sensor_FL;Electronic_Stability_Ctrl,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,TPMS_DATA,CaliperForceRight,ABS_Module;Electronic_Stability_Ctrl;Wheel_Speed_Sensor_RR,FR_CHAS_041
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,TPMS_DATA,BrakePedalSwitch,Height_Sensor_Rear;Air_Suspension_Ctrl,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electric_Power_Steering,TPMS_DATA,LateralAccel,Electric_Power_Steering,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,TPMS_DATA,RideHeightFront,Electronic_Stability_Ctrl;Yaw_Rate_Sensor,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,TPMS_DATA,WheelSpeedRL,ABS_Module;Wheel_Speed_Sensor_RL,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,TPMS_DATA,WheelSpeedRR,Electronic_Stability_Ctrl;Brake_Booster_Ctrl,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module,TPMS_DATA,ABSActive,Electronic_Stability_Ctrl;ABS_Module,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_R,TPMS_DATA,VehicleSpeed,Brake_Caliper_Actuator_R;Electric_Parking_Brake,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_L,TPMS_DATA,SteeringTorque,Brake_Caliper_Actuator_L;Electric_Parking_Brake,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,TPMS_DATA,ESCActive,Wheel_Speed_Sensor_FL;ABS_Module,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,TPMS_DATA,CaliperForceLeft,Wheel_Speed_Sensor_RR,FR_CHAS_041
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,TPMS_DATA,ParkBrakeState,Air_Suspension_Ctrl;Height_Sensor_Rear,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electric_Power_Steering,TPMS_DATA,LongitudinalAccel,Electric_Power_Steering,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,TPMS_DATA,YawRate,Yaw_Rate_Sensor;Electronic_Stability_Ctrl,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,TPMS_DATA,TractionCtrlActive,ABS_Module;Wheel_Speed_Sensor_RL,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,TPMS_DATA,BoosterVacuum,Brake_Booster_Ctrl;Electronic_Stability_Ctrl,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module,TPMS_DATA,TirePressureFL,ABS_Module;Electronic_Stability_Ctrl,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_R,TPMS_DATA,WheelSpeedFR,Electric_Parking_Brake;Brake_Caliper_Actuator_R,FR_CHAS_041
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_L,TPMS_DATA,TirePressureFR,Brake_Caliper_Actuator_L,FR_CHAS_041
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,ACC_STATUS,ObjectCountFront,ADAS_Domain_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Driver_Monitor_Camera,ACC_STATUS,CameraBlocked,ADAS_Domain_Ctrl;Driver_Monitor_Camera,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,ACC_STATUS,AEBWarning,Front_Radar;Adaptive_Cruise_Ctrl,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,ACC_STATUS,DriverDrowsiness,Surround_View_Camera,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,ACC_STATUS,ParkDistanceFront,Adaptive_Cruise_Ctrl;Front_Radar;Auto_Emergency_Brake,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module,ACC_STATUS,LeadVehicleSpeed,Front_Camera_Module,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl,ACC_STATUS,RadarBlocked,ADAS_Domain_Ctrl,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,ACC_STATUS,ParkDistanceRear,ADAS_Domain_Ctrl;Corner_Radar_RR;Blind_Spot_Monitor_R,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,ACC_STATUS,BlindSpotRight,Ultrasonic_Sensor_Front,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Driver_Monitor_Camera,ACC_STATUS,BlindSpotLeft,ADAS_Domain_Ctrl;Driver_Monitor_Camera,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,ACC_STATUS,AEBBrakeRequest,Adaptive_Cruise_Ctrl;ADAS_Domain_Ctrl,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,ACC_STATUS,SpeedLimitDetected,ADAS_Domain_Ctrl;Surround_View_Camera;Park_Assist_Ctrl,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,ACC_STATUS,LeadVehicleDistance,Front_Radar;Auto_Emergency_Brake;Adaptive_Cruise_Ctrl,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module,ACC_STATUS,LaneDepartureWarn,ADAS_Domain_Ctrl;Front_Camera_Module,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl,ACC_STATUS,ACCSetSpeed,ADAS_Domain_Ctrl,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,ACC_STATUS,CrossTrafficAlert,Blind_Spot_Monitor_R,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,ACC_STATUS,DriverDistracted,Park_Assist_Ctrl;Ultrasonic_Sensor_Front;ADAS_Domain_Ctrl,FR_ADAS_042
+Central_Gateway -> ADAS_Domain_Ctrl -> Driver_Monitor_Camera,ACC_STATUS,LaneKeepTorque,ADAS_Domain_Ctrl;Driver_Monitor_Camera,FR_ADAS_042
+Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Memory_Unit,CLIMATE_DATA,AmbientLightColor,Seat_Memory_Unit;Seat_Ctrl_Driver,FR_BODY_043
+Body_Domain_Ctrl -> Body_Control_Module,CLIMATE_DATA,DoorOpenRR,Body_Control_Module,FR_BODY_043
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,CLIMATE_DATA,MirrorFoldCmd,Headlamp_Ctrl_R;Lighting_Ctrl;Body_Control_Module,FR_BODY_043
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Front,CLIMATE_DATA,SeatPositionMemory,Airbag_Control_Unit;Crash_Sensor_Front,FR_BODY_043
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,CLIMATE_DATA,WiperSpeed,Body_Control_Module;Window_Lift_Motor_RL,FR_BODY_043
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_R,CLIMATE_DATA,RainIntensity,Airbag_Control_Unit;Crash_Sensor_Side_R,FR_BODY_043
+Body_Domain_Ctrl -> Seat_Ctrl_Driver,CLIMATE_DATA,SeatHeaterLevel,Seat_Ctrl_Driver,FR_BODY_043
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger,CLIMATE_DATA,HighBeamActive,Seat_Ctrl_Passenger,FR_BODY_043
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Occupant_Detection_Sensor,CLIMATE_DATA,ACCompressorOn,Seat_Ctrl_Passenger;Occupant_Detection_Sensor,FR_BODY_043
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,CLIMATE_DATA,TurnIndicatorRight,Body_Control_Module;Door_Ctrl_FL;Window_Lift_Motor_FL,FR_BODY_043
+Body_Domain_Ctrl -> HVAC_Ctrl,CLIMATE_DATA,TailgateOpen,HVAC_Ctrl,FR_BODY_043
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,CLIMATE_DATA,CentralLockState,Body_Control_Module;Door_Ctrl_FL;Mirror_Ctrl_L,FR_BODY_043
+Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl -> Rain_Light_Sensor,CLIMATE_DATA,CrashDetected,Body_Control_Module;Rain_Light_Sensor,FR_BODY_043
+Central_Gateway -> Infotainment_Domain_Ctrl,TELEMATICS_DATA,DisplayBrightness,Infotainment_Domain_Ctrl,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,TELEMATICS_DATA,MediaTrackId,Infotainment_Domain_Ctrl;Instrument_Cluster,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,TELEMATICS_DATA,VolumeLevel,Infotainment_Domain_Ctrl;Telematics_Control_Unit;LTE_Modem,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,TELEMATICS_DATA,ClusterTheme,Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,TELEMATICS_DATA,GPSLatitude,Infotainment_Head_Unit,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,TELEMATICS_DATA,ClockTime,Instrument_Cluster;Infotainment_Domain_Ctrl;Head_Up_Display,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,TELEMATICS_DATA,NavTurnDistance,Infotainment_Domain_Ctrl;Rear_Seat_Entertainment,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,TELEMATICS_DATA,NavGuidanceActive,Voice_Assistant_Module,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,TELEMATICS_DATA,VoiceCmdActive,eCall_Module;Telematics_Control_Unit;Infotainment_Domain_Ctrl,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,TELEMATICS_DATA,NetworkSignal,Audio_Amplifier,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,TELEMATICS_DATA,OutsideTempDisplay,Infotainment_Domain_Ctrl;GNSS_Receiver,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl,TELEMATICS_DATA,PhoneCallActive,Infotainment_Domain_Ctrl,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,TELEMATICS_DATA,GPSSpeed,Instrument_Cluster;Infotainment_Domain_Ctrl,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,TELEMATICS_DATA,GPSLongitude,LTE_Modem;Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,TELEMATICS_DATA,HUDEnable,Telematics_Control_Unit;Infotainment_Domain_Ctrl,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,TELEMATICS_DATA,OTAUpdateStatus,Infotainment_Head_Unit;Infotainment_Domain_Ctrl,FR_INFO_044
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,TELEMATICS_DATA,OdometerValue,Instrument_Cluster;Head_Up_Display,FR_INFO_044
+Body_Control_Module -> Door_Ctrl_RR,SAFETY_STATUS,WiperSpeed,Door_Ctrl_RR,FR_BODY_045
+Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,SAFETY_STATUS,WindowPositionFL,Door_Ctrl_FR;Window_Lift_Motor_FR,FR_BODY_045
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_L,SAFETY_STATUS,BlowerLevel,Headlamp_Ctrl_L;Lighting_Ctrl,FR_BODY_045
+Body_Control_Module -> Lighting_Ctrl -> Tail_Lamp_Ctrl,SAFETY_STATUS,SeatHeaterLevel,Tail_Lamp_Ctrl,FR_BODY_045
+Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,SAFETY_STATUS,MirrorFoldCmd,Mirror_Ctrl_L,FR_BODY_045
+Body_Control_Module -> Door_Ctrl_FR,SAFETY_STATUS,TailgateOpen,Door_Ctrl_FR,FR_BODY_045
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,SAFETY_STATUS,BrakeLampActive,Headlamp_Ctrl_R;Lighting_Ctrl,FR_BODY_045
+Body_Control_Module -> Door_Ctrl_FR -> Mirror_Ctrl_R,SAFETY_STATUS,TurnIndicatorRight,Door_Ctrl_FR;Mirror_Ctrl_R,FR_BODY_045
+Body_Control_Module -> Door_Ctrl_RR,SAFETY_STATUS,AmbientLightColor,Door_Ctrl_RR,FR_BODY_045
+Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,SAFETY_STATUS,DoorOpenRL,Door_Ctrl_FR;Window_Lift_Motor_FR,FR_BODY_045
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_L,SAFETY_STATUS,KeyFobDetected,Headlamp_Ctrl_L;Lighting_Ctrl,FR_BODY_045
+Body_Control_Module -> Lighting_Ctrl -> Tail_Lamp_Ctrl,SAFETY_STATUS,OccupantPresent,Lighting_Ctrl;Tail_Lamp_Ctrl,FR_BODY_045
+Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,SAFETY_STATUS,RainIntensity,Mirror_Ctrl_L;Door_Ctrl_FL,FR_BODY_045
+Body_Control_Module -> Door_Ctrl_FR,SAFETY_STATUS,ImmobilizerStatus,Door_Ctrl_FR,FR_BODY_045
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,SAFETY_STATUS,TurnIndicatorLeft,Lighting_Ctrl;Headlamp_Ctrl_R,FR_BODY_045
+Body_Control_Module -> Door_Ctrl_FR -> Mirror_Ctrl_R,SAFETY_STATUS,WindowPositionRR,Mirror_Ctrl_R,FR_BODY_045
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR,DOOR_STATUS,DoorOpenFL,Door_Ctrl_FR,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> Seat_Ctrl_Driver,DOOR_STATUS,WindowPositionRL,Body_Domain_Ctrl;Seat_Ctrl_Driver,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RR,DOOR_STATUS,WiperSpeed,Body_Domain_Ctrl;Body_Control_Module;Door_Ctrl_RR,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,DOOR_STATUS,DoorOpenRL,Window_Lift_Motor_FL,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Memory_Unit,DOOR_STATUS,WindowPositionFL,Seat_Memory_Unit,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> Blower_Motor_Ctrl,DOOR_STATUS,BlowerLevel,Body_Domain_Ctrl;Blower_Motor_Ctrl,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,DOOR_STATUS,WindowPositionRR,Door_Ctrl_RL;Body_Control_Module;Window_Lift_Motor_RL,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_L,DOOR_STATUS,RainIntensity,Airbag_Control_Unit;Crash_Sensor_Side_L,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> HVAC_Ctrl -> AC_Compressor_Ctrl,DOOR_STATUS,SeatPositionMemory,AC_Compressor_Ctrl,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Heater_Driver,DOOR_STATUS,AmbientLightColor,Body_Domain_Ctrl;Seat_Heater_Driver;Seat_Ctrl_Driver,FR_BODY_046
+Central_Gateway -> Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Mirror_Ctrl_R,DOOR_STATUS,SeatbeltStatus,Body_Control_Module;Mirror_Ctrl_R;Door_Ctrl_FR,FR_BODY_046
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,STABILITY_STATUS,LongitudinalAccel,Wheel_Speed_Sensor_RL,FR_CHAS_047
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,STABILITY_STATUS,BrakePressure,Air_Suspension_Ctrl;Height_Sensor_Rear,FR_CHAS_047
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Air_Compressor_Ctrl,STABILITY_STATUS,TirePressureFL,Air_Suspension_Ctrl;Air_Compressor_Ctrl,FR_CHAS_047
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,STABILITY_STATUS,WheelSpeedFR,Yaw_Rate_Sensor;Electronic_Stability_Ctrl,FR_CHAS_047
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module,STABILITY_STATUS,BoosterVacuum,ABS_Module,FR_CHAS_047
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_L,STABILITY_STATUS,ParkBrakeState,Electric_Parking_Brake;Brake_Caliper_Actuator_L,FR_CHAS_047
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,STABILITY_STATUS,CaliperForceRight,ABS_Module;Electronic_Stability_Ctrl;Wheel_Speed_Sensor_FL,FR_CHAS_047
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_R,STABILITY_STATUS,TirePressureFR,Brake_Caliper_Actuator_R;Electric_Parking_Brake,FR_CHAS_047
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Angle_Sensor,STABILITY_STATUS,HillHoldActive,Electric_Power_Steering;Steering_Angle_Sensor,FR_CHAS_047
+Chassis_Domain_Ctrl -> Electric_Parking_Brake,STABILITY_STATUS,ABSActive,Electric_Parking_Brake,FR_CHAS_047
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,STABILITY_STATUS,VehicleSpeed,Electronic_Stability_Ctrl;Wheel_Speed_Sensor_RR;ABS_Module,FR_CHAS_047
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,STABILITY_STATUS,CaliperForceLeft,Electronic_Stability_Ctrl;Wheel_Speed_Sensor_RL,FR_CHAS_047
+Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,CHARGE_STATUS,IdleStopActive,Ignition_Ctrl;Coil_Driver_Unit,FR_POWE_048
+Engine_Control_Module -> Throttle_Body_Ctrl -> Pedal_Position_Sensor,CHARGE_STATUS,IntakeAirTemp,Throttle_Body_Ctrl;Pedal_Position_Sensor,FR_POWE_048
+Engine_Control_Module -> Ignition_Ctrl,CHARGE_STATUS,PackVoltage,Ignition_Ctrl,FR_POWE_048
+Engine_Control_Module -> Turbo_Ctrl -> Wastegate_Actuator,CHARGE_STATUS,InjectionTiming,Turbo_Ctrl;Wastegate_Actuator,FR_POWE_048
+Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,CHARGE_STATUS,RegenLevel,Turbo_Ctrl;Boost_Pressure_Sensor,FR_POWE_048
+Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,CHARGE_STATUS,OilPressure,Fuel_Injection_Ctrl;Fuel_Pump_Ctrl,FR_POWE_048
+Engine_Control_Module -> Ignition_Ctrl -> Knock_Sensor_Module,CHARGE_STATUS,BatterySOH,Ignition_Ctrl;Knock_Sensor_Module,FR_POWE_048
+Engine_Control_Module -> Throttle_Body_Ctrl,CHARGE_STATUS,IgnitionAngle,Throttle_Body_Ctrl,FR_POWE_048
+Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,CHARGE_STATUS,ChargeState,Coil_Driver_Unit;Ignition_Ctrl,FR_POWE_048
+Engine_Control_Module -> Throttle_Body_Ctrl -> Pedal_Position_Sensor,CHARGE_STATUS,FuelRate,Throttle_Body_Ctrl;Pedal_Position_Sensor,FR_POWE_048
+Engine_Control_Module -> Ignition_Ctrl,CHARGE_STATUS,CoolantPumpDuty,Ignition_Ctrl,FR_POWE_048
+Engine_Control_Module -> Turbo_Ctrl -> Wastegate_Actuator,CHARGE_STATUS,CurrentGear,Wastegate_Actuator,FR_POWE_048
+Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,CHARGE_STATUS,ClutchPosition,Boost_Pressure_Sensor;Turbo_Ctrl,FR_POWE_048
+Engine_Control_Module -> Fuel_Injection_Ctrl -> Fuel_Pump_Ctrl,CHARGE_STATUS,PackCurrent,Fuel_Injection_Ctrl;Fuel_Pump_Ctrl,FR_POWE_048
+Engine_Control_Module -> Ignition_Ctrl -> Knock_Sensor_Module,CHARGE_STATUS,CellTempMin,Knock_Sensor_Module;Ignition_Ctrl,FR_POWE_048
+Engine_Control_Module -> Throttle_Body_Ctrl,CHARGE_STATUS,ExhaustTemp,Throttle_Body_Ctrl,FR_POWE_048
+Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,CHARGE_STATUS,LambdaValue,Ignition_Ctrl;Coil_Driver_Unit,FR_POWE_048
+Engine_Control_Module -> Throttle_Body_Ctrl -> Pedal_Position_Sensor,CHARGE_STATUS,TorqueRequest,Throttle_Body_Ctrl;Pedal_Position_Sensor,FR_POWE_048
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module,ACC_STATUS,LaneKeepTorque,ADAS_Domain_Ctrl;Front_Camera_Module,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,ACC_STATUS,CameraBlocked,ADAS_Domain_Ctrl;Ultrasonic_Sensor_Rear,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,ACC_STATUS,SurroundViewActive,ADAS_Domain_Ctrl;Park_Assist_Ctrl;Surround_View_Camera,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl,ACC_STATUS,AEBWarning,ADAS_Domain_Ctrl,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module -> Traffic_Sign_Recognition,ACC_STATUS,BlindSpotRight,Front_Camera_Module;ADAS_Domain_Ctrl;Traffic_Sign_Recognition,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,ACC_STATUS,ACCSetSpeed,Park_Assist_Ctrl;ADAS_Domain_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL,ACC_STATUS,LeadVehicleSpeed,Corner_Radar_RL,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,ACC_STATUS,ParkDistanceFront,Front_Radar;ADAS_Domain_Ctrl;Adaptive_Cruise_Ctrl,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module,ACC_STATUS,LeadVehicleDistance,Front_Camera_Module;ADAS_Domain_Ctrl,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,ACC_STATUS,ACCTargetDistance,Ultrasonic_Sensor_Rear;ADAS_Domain_Ctrl;Park_Assist_Ctrl,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,ACC_STATUS,CrossTrafficAlert,Park_Assist_Ctrl;Surround_View_Camera,FR_ADAS_049
+Central_Gateway -> ADAS_Domain_Ctrl,ACC_STATUS,ParkDistanceRear,ADAS_Domain_Ctrl,FR_ADAS_049
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl,LANE_DATA,AEBBrakeRequest,Park_Assist_Ctrl,FR_ADAS_050
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,LANE_DATA,SpeedLimitDetected,Surround_View_Camera;Park_Assist_Ctrl,FR_ADAS_050
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,LANE_DATA,LaneKeepTorque,Park_Assist_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_050
+ADAS_Domain_Ctrl -> Front_Camera_Module,LANE_DATA,AEBWarning,Front_Camera_Module,FR_ADAS_050
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,LANE_DATA,SurroundViewActive,Adaptive_Cruise_Ctrl;Auto_Emergency_Brake,FR_ADAS_050
+ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,LANE_DATA,ParkDistanceFront,Ultrasonic_Sensor_Rear;Park_Assist_Ctrl,FR_ADAS_050
+ADAS_Domain_Ctrl -> Corner_Radar_RL,LANE_DATA,LeadVehicleDistance,Corner_Radar_RL,FR_ADAS_050
+ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,LANE_DATA,ObjectCountFront,Adaptive_Cruise_Ctrl;Front_Radar,FR_ADAS_050
+ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,LANE_DATA,DriverDrowsiness,Corner_Radar_RR;Blind_Spot_Monitor_R,FR_ADAS_050
+ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,LANE_DATA,CameraBlocked,Front_Camera_Module;Lane_Keep_Assist,FR_ADAS_050
+ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,LANE_DATA,BlindSpotLeft,Corner_Radar_RL;Blind_Spot_Monitor_L,FR_ADAS_050
+ADAS_Domain_Ctrl -> Driver_Monitor_Camera,LANE_DATA,BlindSpotRight,Driver_Monitor_Camera,FR_ADAS_050
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,NAV_DATA,GPSLatitude,Infotainment_Domain_Ctrl;Head_Up_Display,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,NAV_DATA,AudioSource,Infotainment_Domain_Ctrl;Infotainment_Head_Unit,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,NAV_DATA,HUDEnable,Infotainment_Domain_Ctrl;GNSS_Receiver,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,NAV_DATA,GPSLongitude,Infotainment_Domain_Ctrl;Instrument_Cluster,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,NAV_DATA,NavTurnDistance,Telematics_Control_Unit;Infotainment_Domain_Ctrl;LTE_Modem,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,NAV_DATA,OutsideTempDisplay,eCall_Module;Telematics_Control_Unit;Infotainment_Domain_Ctrl,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,NAV_DATA,GPSSpeed,Infotainment_Domain_Ctrl;Rear_Seat_Entertainment,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,NAV_DATA,NavGuidanceActive,Audio_Amplifier,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,NAV_DATA,DisplayBrightness,Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,NAV_DATA,ClockTime,Infotainment_Domain_Ctrl;Voice_Assistant_Module,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl,NAV_DATA,VoiceCmdActive,Infotainment_Domain_Ctrl,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,NAV_DATA,VolumeLevel,Head_Up_Display,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,NAV_DATA,RearScreenPower,Infotainment_Head_Unit;Infotainment_Domain_Ctrl,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,NAV_DATA,MediaTrackId,Telematics_Control_Unit;GNSS_Receiver,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,NAV_DATA,OTAUpdateStatus,Instrument_Cluster;Infotainment_Domain_Ctrl,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,NAV_DATA,OdometerValue,Infotainment_Domain_Ctrl;LTE_Modem,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,NAV_DATA,ECallTriggered,Telematics_Control_Unit;eCall_Module,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,NAV_DATA,NetworkSignal,Infotainment_Domain_Ctrl;Rear_Seat_Entertainment,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,NAV_DATA,ClusterTheme,Audio_Amplifier;Infotainment_Domain_Ctrl;Infotainment_Head_Unit,FR_INFO_051
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,NAV_DATA,PhoneCallActive,Telematics_Control_Unit;Infotainment_Domain_Ctrl,FR_INFO_051
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl,TORQUE_CTRL,LambdaValue,Battery_Management_System;Powertrain_Domain_Ctrl;Battery_Thermal_Ctrl,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,TORQUE_CTRL,PedalPosition,Engine_Control_Module;Coil_Driver_Unit,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl,TORQUE_CTRL,MotorSpeedFront,Powertrain_Domain_Ctrl;Traction_Inverter_Ctrl,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl,TORQUE_CTRL,CellTempMin,Ignition_Ctrl;Powertrain_Domain_Ctrl;Engine_Control_Module,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Cell_Monitor_Unit_1,TORQUE_CTRL,ClutchPosition,Battery_Management_System;Cell_Monitor_Unit_1;Powertrain_Domain_Ctrl,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Front -> Resolver_Front,TORQUE_CTRL,BoostPressure,Traction_Inverter_Ctrl;Resolver_Front,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl -> Coolant_Pump_Ctrl,TORQUE_CTRL,InjectionTiming,Battery_Thermal_Ctrl;Coolant_Pump_Ctrl;Battery_Management_System,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl,TORQUE_CTRL,EngineSpeed,Powertrain_Domain_Ctrl;Transmission_Control_Module;Clutch_Actuator_Ctrl,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Knock_Sensor_Module,TORQUE_CTRL,CurrentGear,Engine_Control_Module;Knock_Sensor_Module;Ignition_Ctrl,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Rear,TORQUE_CTRL,CellTempMax,Traction_Inverter_Ctrl;Motor_Ctrl_Rear,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl -> Clutch_Position_Sensor,TORQUE_CTRL,KnockLevel,Powertrain_Domain_Ctrl;Clutch_Position_Sensor,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl,TORQUE_CTRL,PlugLockStatus,Powertrain_Domain_Ctrl,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl,TORQUE_CTRL,ExhaustTemp,Powertrain_Domain_Ctrl;Battery_Thermal_Ctrl;Battery_Management_System,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,TORQUE_CTRL,CoolantTemp,Ignition_Ctrl;Coil_Driver_Unit,FR_POWE_052
+Central_Gateway -> Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl,TORQUE_CTRL,BatterySOC,Powertrain_Domain_Ctrl;Traction_Inverter_Ctrl,FR_POWE_052
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl,STABILITY_STATUS,YawRate,Electronic_Stability_Ctrl;Chassis_Domain_Ctrl,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl,STABILITY_STATUS,TirePressureRR,Chassis_Domain_Ctrl,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,STABILITY_STATUS,SteeringAssistLevel,Chassis_Domain_Ctrl;ABS_Module;Electronic_Stability_Ctrl;Wheel_Speed_Sensor_FR,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_L,STABILITY_STATUS,TirePressureFL,Chassis_Domain_Ctrl;Brake_Caliper_Actuator_L;Electric_Parking_Brake,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,STABILITY_STATUS,RideHeightRear,Electronic_Stability_Ctrl;ABS_Module;Chassis_Domain_Ctrl;Wheel_Speed_Sensor_FL,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,STABILITY_STATUS,TractionCtrlActive,Chassis_Domain_Ctrl;Air_Suspension_Ctrl;Height_Sensor_Front,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,STABILITY_STATUS,ESCActive,Chassis_Domain_Ctrl;Brake_Booster_Ctrl;Electronic_Stability_Ctrl,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,STABILITY_STATUS,BoosterVacuum,Electronic_Stability_Ctrl;ABS_Module;Wheel_Speed_Sensor_RL,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,STABILITY_STATUS,ParkBrakeState,Tire_Pressure_Monitor,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl,STABILITY_STATUS,SteeringAngle,Chassis_Domain_Ctrl;Air_Suspension_Ctrl,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,STABILITY_STATUS,LongitudinalAccel,Electronic_Stability_Ctrl;Wheel_Speed_Sensor_RR,FR_CHAS_053
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Torque_Sensor,STABILITY_STATUS,TirePressureRL,Chassis_Domain_Ctrl;Electric_Power_Steering;Steering_Torque_Sensor,FR_CHAS_053
+Powertrain_Domain_Ctrl -> Engine_Control_Module,TRANS_DATA,InverterTemp,Engine_Control_Module,FR_POWE_054
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,TRANS_DATA,IgnitionAngle,Engine_Control_Module;Fuel_Injection_Ctrl;Injector_Driver_Bank2,FR_POWE_054
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,TRANS_DATA,LambdaValue,Engine_Control_Module;Turbo_Ctrl;Boost_Pressure_Sensor,FR_POWE_054
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Gear_Selector_Module,TRANS_DATA,ActualTorque,Gear_Selector_Module;Transmission_Control_Module,FR_POWE_054
+Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl,TRANS_DATA,InjectionTiming,Battery_Management_System;Battery_Thermal_Ctrl,FR_POWE_054
+Powertrain_Domain_Ctrl -> Transmission_Control_Module,TRANS_DATA,PedalPosition,Transmission_Control_Module,FR_POWE_054
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl,TRANS_DATA,OilPressure,Ignition_Ctrl,FR_POWE_054
+Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Front -> Resolver_Front,TRANS_DATA,ChargeState,Resolver_Front;Motor_Ctrl_Front;Traction_Inverter_Ctrl,FR_POWE_054
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl,TRANS_DATA,CoolantTemp,Transmission_Control_Module;Clutch_Actuator_Ctrl,FR_POWE_054
+Powertrain_Domain_Ctrl -> Engine_Control_Module,TRANS_DATA,IntakeAirTemp,Engine_Control_Module,FR_POWE_054
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank2,TRANS_DATA,EngineSpeed,Injector_Driver_Bank2;Fuel_Injection_Ctrl;Engine_Control_Module,FR_POWE_054
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Turbo_Ctrl -> Boost_Pressure_Sensor,TRANS_DATA,CurrentGear,Turbo_Ctrl;Boost_Pressure_Sensor,FR_POWE_054
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Gear_Selector_Module,TRANS_DATA,BoostPressure,Gear_Selector_Module,FR_POWE_054
+Powertrain_Domain_Ctrl -> Battery_Management_System -> Battery_Thermal_Ctrl,TRANS_DATA,ThrottlePosition,Battery_Thermal_Ctrl,FR_POWE_054
+Powertrain_Domain_Ctrl -> Transmission_Control_Module,TRANS_DATA,FuelLevel,Transmission_Control_Module,FR_POWE_054
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl,TRANS_DATA,MotorSpeedRear,Engine_Control_Module;Ignition_Ctrl,FR_POWE_054
+Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Front -> Resolver_Front,TRANS_DATA,CoolantPumpDuty,Traction_Inverter_Ctrl;Resolver_Front,FR_POWE_054
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Clutch_Actuator_Ctrl,TRANS_DATA,ClutchPosition,Clutch_Actuator_Ctrl,FR_POWE_054
+Body_Control_Module -> Wiper_Ctrl,ACCESS_STATUS,WindowPositionFR,Wiper_Ctrl,FR_BODY_055
+Body_Control_Module -> Door_Ctrl_FR,ACCESS_STATUS,TurnIndicatorLeft,Door_Ctrl_FR,FR_BODY_055
+Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,ACCESS_STATUS,TurnIndicatorRight,Window_Lift_Motor_FR;Door_Ctrl_FR,FR_BODY_055
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,ACCESS_STATUS,CrashDetected,Lighting_Ctrl;Headlamp_Ctrl_R,FR_BODY_055
+Body_Control_Module -> Door_Ctrl_RL,ACCESS_STATUS,SeatbeltStatus,Door_Ctrl_RL,FR_BODY_055
+Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,ACCESS_STATUS,AmbientLightColor,Window_Lift_Motor_RL;Door_Ctrl_RL,FR_BODY_055
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_L,ACCESS_STATUS,DoorOpenFR,Headlamp_Ctrl_L;Lighting_Ctrl,FR_BODY_055
+Body_Control_Module -> Lighting_Ctrl -> Ambient_Light_Ctrl,ACCESS_STATUS,MirrorFoldCmd,Lighting_Ctrl;Ambient_Light_Ctrl,FR_BODY_055
+Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,ACCESS_STATUS,KeyFobDetected,Window_Lift_Motor_FL,FR_BODY_055
+Body_Control_Module -> Wiper_Ctrl,ACCESS_STATUS,SeatPositionMemory,Wiper_Ctrl,FR_BODY_055
+Body_Control_Module -> Door_Ctrl_FR,ACCESS_STATUS,OccupantPresent,Door_Ctrl_FR,FR_BODY_055
+Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,ACCESS_STATUS,WindowPositionRR,Door_Ctrl_FR;Window_Lift_Motor_FR,FR_BODY_055
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,ACCESS_STATUS,ACCompressorOn,Lighting_Ctrl;Headlamp_Ctrl_R,FR_BODY_055
+Body_Control_Module -> Door_Ctrl_RL,ACCESS_STATUS,CentralLockState,Door_Ctrl_RL,FR_BODY_055
+Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,ACCESS_STATUS,WindowPositionFL,Window_Lift_Motor_RL;Door_Ctrl_RL,FR_BODY_055
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_L,ACCESS_STATUS,AirbagDeployCmd,Lighting_Ctrl;Headlamp_Ctrl_L,FR_BODY_055
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,PARK_ASSIST,ACCSetSpeed,Blind_Spot_Monitor_R;Corner_Radar_RR;ADAS_Domain_Ctrl,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,PARK_ASSIST,RadarBlocked,Park_Assist_Ctrl;Ultrasonic_Sensor_Rear,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar,PARK_ASSIST,CrossTrafficAlert,ADAS_Domain_Ctrl;Front_Radar,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,PARK_ASSIST,BlindSpotLeft,Corner_Radar_RL;Blind_Spot_Monitor_L,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL,PARK_ASSIST,ParkDistanceFront,ADAS_Domain_Ctrl;Corner_Radar_RL,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl,PARK_ASSIST,DriverDrowsiness,ADAS_Domain_Ctrl,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR,PARK_ASSIST,LeadVehicleSpeed,Corner_Radar_RR;ADAS_Domain_Ctrl,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,PARK_ASSIST,ACCTargetDistance,Park_Assist_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,PARK_ASSIST,SurroundViewActive,Auto_Emergency_Brake;Adaptive_Cruise_Ctrl,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl -> Driver_Monitor_Camera,PARK_ASSIST,BlindSpotRight,ADAS_Domain_Ctrl;Driver_Monitor_Camera,FR_ADAS_056
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module -> Traffic_Sign_Recognition,PARK_ASSIST,AEBWarning,Front_Camera_Module;Traffic_Sign_Recognition,FR_ADAS_056
+Body_Control_Module -> Lighting_Ctrl,LIGHT_CTRL,HeadlampStatus,Lighting_Ctrl,FR_BODY_057
+Body_Control_Module -> Door_Ctrl_RR,LIGHT_CTRL,OccupantPresent,Door_Ctrl_RR,FR_BODY_057
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_L,LIGHT_CTRL,RainIntensity,Lighting_Ctrl;Headlamp_Ctrl_L,FR_BODY_057
+Body_Control_Module -> Door_Ctrl_RL,LIGHT_CTRL,TurnIndicatorRight,Door_Ctrl_RL,FR_BODY_057
+Body_Control_Module -> Door_Ctrl_RR -> Window_Lift_Motor_RR,LIGHT_CTRL,WindowPositionFL,Window_Lift_Motor_RR;Door_Ctrl_RR,FR_BODY_057
+Body_Control_Module -> Wiper_Ctrl -> Rain_Light_Sensor,LIGHT_CTRL,KeyFobDetected,Rain_Light_Sensor;Wiper_Ctrl,FR_BODY_057
+Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,LIGHT_CTRL,AirbagDeployCmd,Door_Ctrl_FL;Window_Lift_Motor_FL,FR_BODY_057
+Body_Control_Module -> Door_Ctrl_FR,LIGHT_CTRL,BlowerLevel,Door_Ctrl_FR,FR_BODY_057
+Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,LIGHT_CTRL,DoorOpenFL,Window_Lift_Motor_RL;Door_Ctrl_RL,FR_BODY_057
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,LIGHT_CTRL,WindowPositionFR,Headlamp_Ctrl_R;Lighting_Ctrl,FR_BODY_057
+Body_Control_Module -> Lighting_Ctrl -> Tail_Lamp_Ctrl,LIGHT_CTRL,WindowPositionRL,Tail_Lamp_Ctrl,FR_BODY_057
+Body_Domain_Ctrl -> HVAC_Ctrl,SAFETY_STATUS,SeatPositionMemory,HVAC_Ctrl,FR_BODY_058
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL,SAFETY_STATUS,WindowPositionRL,Door_Ctrl_FL;Body_Control_Module,FR_BODY_058
+Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Memory_Unit,SAFETY_STATUS,MirrorFoldCmd,Seat_Memory_Unit;Seat_Ctrl_Driver,FR_BODY_058
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,SAFETY_STATUS,SeatHeaterLevel,Door_Ctrl_FL;Body_Control_Module;Mirror_Ctrl_L,FR_BODY_058
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,SAFETY_STATUS,BrakeLampActive,Door_Ctrl_FR;Window_Lift_Motor_FR,FR_BODY_058
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Occupant_Detection_Sensor,SAFETY_STATUS,RainIntensity,Seat_Ctrl_Passenger;Occupant_Detection_Sensor,FR_BODY_058
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_R,SAFETY_STATUS,DoorOpenFL,Crash_Sensor_Side_R;Airbag_Control_Unit,FR_BODY_058
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Front,SAFETY_STATUS,SeatbeltStatus,Airbag_Control_Unit;Crash_Sensor_Front,FR_BODY_058
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FR -> Mirror_Ctrl_R,SAFETY_STATUS,CentralLockState,Door_Ctrl_FR;Mirror_Ctrl_R,FR_BODY_058
+Body_Domain_Ctrl -> HVAC_Ctrl,SAFETY_STATUS,WiperSpeed,HVAC_Ctrl,FR_BODY_058
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL,SAFETY_STATUS,WindowPositionFL,Door_Ctrl_FL;Body_Control_Module,FR_BODY_058
+Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Memory_Unit,SAFETY_STATUS,WindowPositionFR,Seat_Ctrl_Driver;Seat_Memory_Unit,FR_BODY_058
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,SAFETY_STATUS,OccupantPresent,Body_Control_Module;Mirror_Ctrl_L;Door_Ctrl_FL,FR_BODY_058
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,LIGHT_CTRL,CentralLockState,Door_Ctrl_RL;Window_Lift_Motor_RL,FR_BODY_059
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL,LIGHT_CTRL,OccupantPresent,Door_Ctrl_FL,FR_BODY_059
+Body_Domain_Ctrl -> Airbag_Control_Unit,LIGHT_CTRL,WindowPositionRR,Airbag_Control_Unit,FR_BODY_059
+Body_Domain_Ctrl -> HVAC_Ctrl,LIGHT_CTRL,SeatPositionMemory,HVAC_Ctrl,FR_BODY_059
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_R,LIGHT_CTRL,CabinTemp,Airbag_Control_Unit;Crash_Sensor_Side_R,FR_BODY_059
+Body_Domain_Ctrl -> Keyless_Entry_Module -> Immobilizer,LIGHT_CTRL,SeatHeaterLevel,Keyless_Entry_Module;Immobilizer,FR_BODY_059
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,LIGHT_CTRL,WiperSpeed,Lighting_Ctrl;Headlamp_Ctrl_R,FR_BODY_059
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_L,LIGHT_CTRL,TailgateOpen,Headlamp_Ctrl_L;Lighting_Ctrl,FR_BODY_059
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Occupant_Detection_Sensor,LIGHT_CTRL,TurnIndicatorLeft,Seat_Ctrl_Passenger;Occupant_Detection_Sensor,FR_BODY_059
+Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Heater_Driver,LIGHT_CTRL,RainIntensity,Seat_Ctrl_Driver;Seat_Heater_Driver,FR_BODY_059
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_L,LIGHT_CTRL,HeadlampStatus,Airbag_Control_Unit;Crash_Sensor_Side_L,FR_BODY_059
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Front,LIGHT_CTRL,WindowPositionFR,Crash_Sensor_Front;Airbag_Control_Unit,FR_BODY_059
+Body_Domain_Ctrl -> Seat_Ctrl_Driver,LIGHT_CTRL,ImmobilizerStatus,Seat_Ctrl_Driver,FR_BODY_059
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,LIGHT_CTRL,BlowerLevel,Body_Control_Module;Window_Lift_Motor_RL,FR_BODY_059
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL,LIGHT_CTRL,ACCompressorOn,Door_Ctrl_FL,FR_BODY_059
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar,ACC_STATUS,LeadVehicleDistance,ADAS_Domain_Ctrl;Front_Radar,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,ACC_STATUS,DriverDistracted,Adaptive_Cruise_Ctrl;ADAS_Domain_Ctrl;Front_Radar,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,ACC_STATUS,SpeedLimitDetected,Park_Assist_Ctrl;Ultrasonic_Sensor_Rear;ADAS_Domain_Ctrl,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl,ACC_STATUS,ACCTargetDistance,Park_Assist_Ctrl,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module -> Lane_Keep_Assist,ACC_STATUS,SurroundViewActive,Lane_Keep_Assist;Front_Camera_Module;ADAS_Domain_Ctrl,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Camera_Module,ACC_STATUS,BlindSpotRight,ADAS_Domain_Ctrl;Front_Camera_Module,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL,ACC_STATUS,LeadVehicleSpeed,Corner_Radar_RL;ADAS_Domain_Ctrl,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Surround_View_Camera,ACC_STATUS,RadarBlocked,Surround_View_Camera;Park_Assist_Ctrl;ADAS_Domain_Ctrl,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Front,ACC_STATUS,ParkDistanceRear,ADAS_Domain_Ctrl;Park_Assist_Ctrl;Ultrasonic_Sensor_Front,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR,ACC_STATUS,AEBWarning,ADAS_Domain_Ctrl;Corner_Radar_RR,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RL -> Blind_Spot_Monitor_L,ACC_STATUS,ParkDistanceFront,ADAS_Domain_Ctrl;Blind_Spot_Monitor_L,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl,ACC_STATUS,LaneDepartureWarn,ADAS_Domain_Ctrl,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Driver_Monitor_Camera,ACC_STATUS,AEBBrakeRequest,ADAS_Domain_Ctrl;Driver_Monitor_Camera,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Corner_Radar_RR -> Blind_Spot_Monitor_R,ACC_STATUS,ObjectCountFront,Blind_Spot_Monitor_R;ADAS_Domain_Ctrl;Corner_Radar_RR,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl -> Auto_Emergency_Brake,ACC_STATUS,LaneKeepTorque,ADAS_Domain_Ctrl;Front_Radar;Auto_Emergency_Brake,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar,ACC_STATUS,CameraBlocked,Front_Radar;ADAS_Domain_Ctrl,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Front_Radar -> Adaptive_Cruise_Ctrl,ACC_STATUS,DriverDrowsiness,ADAS_Domain_Ctrl;Adaptive_Cruise_Ctrl;Front_Radar,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl -> Ultrasonic_Sensor_Rear,ACC_STATUS,CrossTrafficAlert,Ultrasonic_Sensor_Rear,FR_ADAS_060
+Central_Gateway -> ADAS_Domain_Ctrl -> Park_Assist_Ctrl,ACC_STATUS,ACCSetSpeed,Park_Assist_Ctrl,FR_ADAS_060
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,MEDIA_STATUS,PhoneCallActive,Telematics_Control_Unit;GNSS_Receiver;Infotainment_Domain_Ctrl,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,MEDIA_STATUS,VoiceCmdActive,Voice_Assistant_Module,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,MEDIA_STATUS,NavTurnDistance,Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,MEDIA_STATUS,NetworkSignal,Infotainment_Domain_Ctrl;Audio_Amplifier,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,MEDIA_STATUS,NavGuidanceActive,Infotainment_Domain_Ctrl;Infotainment_Head_Unit,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,MEDIA_STATUS,OutsideTempDisplay,Instrument_Cluster,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl,MEDIA_STATUS,GPSSpeed,Infotainment_Domain_Ctrl,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,MEDIA_STATUS,GPSLatitude,Infotainment_Domain_Ctrl;LTE_Modem;Telematics_Control_Unit,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,MEDIA_STATUS,AudioSource,Infotainment_Domain_Ctrl;Instrument_Cluster;Head_Up_Display,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,MEDIA_STATUS,ClockTime,Telematics_Control_Unit;Infotainment_Domain_Ctrl;GNSS_Receiver,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,MEDIA_STATUS,OdometerValue,Infotainment_Domain_Ctrl;Voice_Assistant_Module,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,MEDIA_STATUS,ECallTriggered,Telematics_Control_Unit,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,MEDIA_STATUS,ClusterTheme,Audio_Amplifier;Infotainment_Head_Unit,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,MEDIA_STATUS,OTAUpdateStatus,Infotainment_Domain_Ctrl;Infotainment_Head_Unit,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,MEDIA_STATUS,GPSLongitude,Infotainment_Domain_Ctrl;Instrument_Cluster,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl,MEDIA_STATUS,HUDEnable,Infotainment_Domain_Ctrl,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,MEDIA_STATUS,MediaTrackId,Telematics_Control_Unit;LTE_Modem,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,MEDIA_STATUS,RearScreenPower,Instrument_Cluster;Infotainment_Domain_Ctrl;Head_Up_Display,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,MEDIA_STATUS,VolumeLevel,Infotainment_Domain_Ctrl;GNSS_Receiver,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,MEDIA_STATUS,DisplayBrightness,Infotainment_Head_Unit;Voice_Assistant_Module,FR_INFO_061
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,TELEMATICS_DATA,OdometerValue,Head_Up_Display;Instrument_Cluster,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Audio_Amplifier,TELEMATICS_DATA,ECallTriggered,Audio_Amplifier,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit,TELEMATICS_DATA,GPSSpeed,Infotainment_Domain_Ctrl;Infotainment_Head_Unit,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> eCall_Module,TELEMATICS_DATA,VolumeLevel,eCall_Module;Infotainment_Domain_Ctrl;Telematics_Control_Unit,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster,TELEMATICS_DATA,NavTurnDistance,Infotainment_Domain_Ctrl;Instrument_Cluster,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> LTE_Modem,TELEMATICS_DATA,ClusterTheme,LTE_Modem;Telematics_Control_Unit,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl,TELEMATICS_DATA,OTAUpdateStatus,Infotainment_Domain_Ctrl,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit -> GNSS_Receiver,TELEMATICS_DATA,AudioSource,GNSS_Receiver,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Voice_Assistant_Module,TELEMATICS_DATA,HUDEnable,Voice_Assistant_Module,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Infotainment_Head_Unit -> Rear_Seat_Entertainment,TELEMATICS_DATA,NetworkSignal,Infotainment_Head_Unit;Infotainment_Domain_Ctrl;Rear_Seat_Entertainment,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Telematics_Control_Unit,TELEMATICS_DATA,PhoneCallActive,Telematics_Control_Unit,FR_INFO_062
+Central_Gateway -> Infotainment_Domain_Ctrl -> Instrument_Cluster -> Head_Up_Display,TELEMATICS_DATA,OutsideTempDisplay,Infotainment_Domain_Ctrl;Instrument_Cluster;Head_Up_Display,FR_INFO_062
+Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,DOOR_STATUS,AmbientLightColor,Window_Lift_Motor_FL;Door_Ctrl_FL,FR_BODY_063
+Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,DOOR_STATUS,HighBeamActive,Window_Lift_Motor_RL;Door_Ctrl_RL,FR_BODY_063
+Body_Control_Module -> Door_Ctrl_RR,DOOR_STATUS,DoorOpenRR,Door_Ctrl_RR,FR_BODY_063
+Body_Control_Module -> Lighting_Ctrl,DOOR_STATUS,WiperSpeed,Lighting_Ctrl,FR_BODY_063
+Body_Control_Module -> Door_Ctrl_RL,DOOR_STATUS,CentralLockState,Door_Ctrl_RL,FR_BODY_063
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_R,DOOR_STATUS,SeatHeaterLevel,Headlamp_Ctrl_R;Lighting_Ctrl,FR_BODY_063
+Body_Control_Module -> Door_Ctrl_FR,DOOR_STATUS,DoorOpenFL,Door_Ctrl_FR,FR_BODY_063
+Body_Control_Module -> Wiper_Ctrl -> Rain_Light_Sensor,DOOR_STATUS,AirbagDeployCmd,Wiper_Ctrl;Rain_Light_Sensor,FR_BODY_063
+Body_Control_Module -> Wiper_Ctrl,DOOR_STATUS,TurnIndicatorRight,Wiper_Ctrl,FR_BODY_063
+Body_Control_Module -> Lighting_Ctrl -> Ambient_Light_Ctrl,DOOR_STATUS,BrakeLampActive,Ambient_Light_Ctrl;Lighting_Ctrl,FR_BODY_063
+Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_L,DOOR_STATUS,DoorOpenFR,Lighting_Ctrl;Headlamp_Ctrl_L,FR_BODY_063
+Body_Control_Module -> Door_Ctrl_FR -> Window_Lift_Motor_FR,DOOR_STATUS,CabinTemp,Window_Lift_Motor_FR,FR_BODY_063
+Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,DOOR_STATUS,BlowerLevel,Window_Lift_Motor_FL,FR_BODY_063
+Body_Control_Module -> Door_Ctrl_RL -> Window_Lift_Motor_RL,DOOR_STATUS,ImmobilizerStatus,Window_Lift_Motor_RL,FR_BODY_063
+Body_Control_Module -> Door_Ctrl_RR,DOOR_STATUS,DoorOpenRL,Door_Ctrl_RR,FR_BODY_063
+Body_Control_Module -> Lighting_Ctrl,DOOR_STATUS,SeatPositionMemory,Lighting_Ctrl,FR_BODY_063
+Body_Control_Module -> Door_Ctrl_RL,DOOR_STATUS,HeadlampStatus,Door_Ctrl_RL,FR_BODY_063
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,STEERING_DATA,RideHeightRear,ABS_Module;Electronic_Stability_Ctrl;Wheel_Speed_Sensor_FL,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,STEERING_DATA,SuspensionMode,Chassis_Domain_Ctrl;Height_Sensor_Front,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl,STEERING_DATA,TractionCtrlActive,Electronic_Stability_Ctrl;Chassis_Domain_Ctrl,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,STEERING_DATA,YawRate,Chassis_Domain_Ctrl;Tire_Pressure_Monitor,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,STEERING_DATA,TirePressureRL,Height_Sensor_Rear,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,STEERING_DATA,CaliperForceLeft,Electronic_Stability_Ctrl;Yaw_Rate_Sensor;Chassis_Domain_Ctrl,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Angle_Sensor,STEERING_DATA,HillHoldActive,Steering_Angle_Sensor;Chassis_Domain_Ctrl;Electric_Power_Steering,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Power_Steering,STEERING_DATA,WheelSpeedRR,Chassis_Domain_Ctrl;Electric_Power_Steering,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,STEERING_DATA,WheelSpeedRL,Electronic_Stability_Ctrl;Brake_Booster_Ctrl;Chassis_Domain_Ctrl,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module,STEERING_DATA,SteeringTorque,Chassis_Domain_Ctrl;ABS_Module,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Air_Compressor_Ctrl,STEERING_DATA,ESCActive,Air_Suspension_Ctrl;Air_Compressor_Ctrl,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl,STEERING_DATA,BrakePedalSwitch,Chassis_Domain_Ctrl,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Torque_Sensor,STEERING_DATA,TirePressureRR,Chassis_Domain_Ctrl;Steering_Torque_Sensor;Electric_Power_Steering,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,STEERING_DATA,LateralAccel,ABS_Module;Wheel_Speed_Sensor_FL,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,STEERING_DATA,ABSActive,Air_Suspension_Ctrl;Chassis_Domain_Ctrl;Height_Sensor_Front,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl,STEERING_DATA,SteeringAngle,Electronic_Stability_Ctrl;Chassis_Domain_Ctrl,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,STEERING_DATA,CaliperForceRight,Chassis_Domain_Ctrl;Tire_Pressure_Monitor,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,STEERING_DATA,TirePressureFL,Chassis_Domain_Ctrl;Height_Sensor_Rear,FR_CHAS_064
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,STEERING_DATA,RideHeightFront,Yaw_Rate_Sensor;Electronic_Stability_Ctrl;Chassis_Domain_Ctrl,FR_CHAS_064
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,LIGHT_CTRL,AirbagDeployCmd,Body_Control_Module;Mirror_Ctrl_L,FR_BODY_065
+Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Memory_Unit,LIGHT_CTRL,KeyFobDetected,Seat_Ctrl_Driver;Seat_Memory_Unit,FR_BODY_065
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_L,LIGHT_CTRL,SeatbeltStatus,Crash_Sensor_Side_L,FR_BODY_065
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Seat_Heater_Passenger,LIGHT_CTRL,AmbientLightColor,Seat_Heater_Passenger;Seat_Ctrl_Passenger,FR_BODY_065
+Body_Domain_Ctrl -> Keyless_Entry_Module -> Tailgate_Ctrl,LIGHT_CTRL,WindowPositionRR,Tailgate_Ctrl,FR_BODY_065
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger,LIGHT_CTRL,SeatHeaterLevel,Seat_Ctrl_Passenger,FR_BODY_065
+Body_Domain_Ctrl -> HVAC_Ctrl -> AC_Compressor_Ctrl,LIGHT_CTRL,OccupantPresent,HVAC_Ctrl;AC_Compressor_Ctrl,FR_BODY_065
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RR -> Window_Lift_Motor_RR,LIGHT_CTRL,CentralLockState,Door_Ctrl_RR;Window_Lift_Motor_RR,FR_BODY_065
+Body_Domain_Ctrl -> Body_Control_Module -> Wiper_Ctrl -> Rain_Light_Sensor,LIGHT_CTRL,CrashDetected,Body_Control_Module;Wiper_Ctrl;Rain_Light_Sensor,FR_BODY_065
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL,LIGHT_CTRL,TurnIndicatorLeft,Door_Ctrl_FL;Body_Control_Module,FR_BODY_065
+Body_Domain_Ctrl -> Body_Control_Module,LIGHT_CTRL,BlowerLevel,Body_Control_Module,FR_BODY_065
+Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Heater_Driver,LIGHT_CTRL,CabinTemp,Seat_Ctrl_Driver;Seat_Heater_Driver,FR_BODY_065
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,LIGHT_CTRL,WindowPositionRL,Body_Control_Module;Mirror_Ctrl_L;Door_Ctrl_FL,FR_BODY_065
+Body_Domain_Ctrl -> Seat_Ctrl_Driver -> Seat_Memory_Unit,LIGHT_CTRL,ACCompressorOn,Seat_Memory_Unit;Seat_Ctrl_Driver,FR_BODY_065
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_L,LIGHT_CTRL,HeadlampStatus,Airbag_Control_Unit;Crash_Sensor_Side_L,FR_BODY_065
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger -> Seat_Heater_Passenger,LIGHT_CTRL,ImmobilizerStatus,Seat_Heater_Passenger;Seat_Ctrl_Passenger,FR_BODY_065
+Body_Domain_Ctrl -> Keyless_Entry_Module -> Tailgate_Ctrl,LIGHT_CTRL,DoorOpenRL,Tailgate_Ctrl;Keyless_Entry_Module,FR_BODY_065
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger,LIGHT_CTRL,HighBeamActive,Seat_Ctrl_Passenger,FR_BODY_065
+Body_Domain_Ctrl -> HVAC_Ctrl -> AC_Compressor_Ctrl,LIGHT_CTRL,DoorOpenFR,HVAC_Ctrl;AC_Compressor_Ctrl,FR_BODY_065
+Body_Domain_Ctrl -> Keyless_Entry_Module,CLIMATE_DATA,SeatbeltStatus,Keyless_Entry_Module,FR_BODY_066
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Ambient_Light_Ctrl,CLIMATE_DATA,RainIntensity,Ambient_Light_Ctrl;Body_Control_Module,FR_BODY_066
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_L,CLIMATE_DATA,TailgateOpen,Airbag_Control_Unit;Crash_Sensor_Side_L,FR_BODY_066
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Window_Lift_Motor_FL,CLIMATE_DATA,KeyFobDetected,Window_Lift_Motor_FL;Body_Control_Module;Door_Ctrl_FL,FR_BODY_066
+Body_Domain_Ctrl -> HVAC_Ctrl -> AC_Compressor_Ctrl,CLIMATE_DATA,TurnIndicatorLeft,HVAC_Ctrl;AC_Compressor_Ctrl,FR_BODY_066
+Body_Domain_Ctrl -> Airbag_Control_Unit -> Crash_Sensor_Side_R,CLIMATE_DATA,CrashDetected,Crash_Sensor_Side_R;Airbag_Control_Unit,FR_BODY_066
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_RR -> Window_Lift_Motor_RR,CLIMATE_DATA,AirbagDeployCmd,Window_Lift_Motor_RR,FR_BODY_066
+Body_Domain_Ctrl -> Body_Control_Module -> Lighting_Ctrl -> Headlamp_Ctrl_L,CLIMATE_DATA,AmbientLightColor,Headlamp_Ctrl_L;Lighting_Ctrl;Body_Control_Module,FR_BODY_066
+Body_Domain_Ctrl -> Seat_Ctrl_Passenger,CLIMATE_DATA,WiperSpeed,Seat_Ctrl_Passenger,FR_BODY_066
+Body_Domain_Ctrl -> Body_Control_Module -> Door_Ctrl_FL -> Mirror_Ctrl_L,CLIMATE_DATA,DoorOpenFR,Door_Ctrl_FL;Mirror_Ctrl_L,FR_BODY_066
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank1,BATTERY_STATUS,ChargeState,Fuel_Injection_Ctrl;Engine_Control_Module;Injector_Driver_Bank1,FR_POWE_067
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl,BATTERY_STATUS,PlugLockStatus,Ignition_Ctrl;Engine_Control_Module,FR_POWE_067
+Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl -> Charge_Lock_Actuator,BATTERY_STATUS,CellTempMin,Onboard_Charger;Charge_Port_Ctrl;Charge_Lock_Actuator,FR_POWE_067
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl,BATTERY_STATUS,CoolantTemp,Engine_Control_Module;Fuel_Injection_Ctrl,FR_POWE_067
+Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl,BATTERY_STATUS,ClutchPosition,Charge_Port_Ctrl;Onboard_Charger,FR_POWE_067
+Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl,BATTERY_STATUS,ContactorState,Traction_Inverter_Ctrl,FR_POWE_067
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Throttle_Body_Ctrl,BATTERY_STATUS,ThrottlePosition,Throttle_Body_Ctrl;Engine_Control_Module,FR_POWE_067
+Powertrain_Domain_Ctrl -> Transmission_Control_Module -> Torque_Converter_Ctrl,BATTERY_STATUS,PackVoltage,Transmission_Control_Module;Torque_Converter_Ctrl,FR_POWE_067
+Powertrain_Domain_Ctrl -> Onboard_Charger,BATTERY_STATUS,EngineSpeed,Onboard_Charger,FR_POWE_067
+Powertrain_Domain_Ctrl -> Battery_Management_System,BATTERY_STATUS,CoolantPumpDuty,Battery_Management_System,FR_POWE_067
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl -> Coil_Driver_Unit,BATTERY_STATUS,MotorSpeedRear,Coil_Driver_Unit;Engine_Control_Module;Ignition_Ctrl,FR_POWE_067
+Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl -> Motor_Ctrl_Front,BATTERY_STATUS,CellTempMax,Motor_Ctrl_Front,FR_POWE_067
+Powertrain_Domain_Ctrl -> Transmission_Control_Module,BATTERY_STATUS,OilPressure,Transmission_Control_Module,FR_POWE_067
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl -> Injector_Driver_Bank1,BATTERY_STATUS,PackCurrent,Injector_Driver_Bank1;Engine_Control_Module;Fuel_Injection_Ctrl,FR_POWE_067
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Ignition_Ctrl,BATTERY_STATUS,PedalPosition,Engine_Control_Module;Ignition_Ctrl,FR_POWE_067
+Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl -> Charge_Lock_Actuator,BATTERY_STATUS,MotorSpeedFront,Charge_Port_Ctrl;Onboard_Charger;Charge_Lock_Actuator,FR_POWE_067
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Fuel_Injection_Ctrl,BATTERY_STATUS,TargetGear,Engine_Control_Module;Fuel_Injection_Ctrl,FR_POWE_067
+Powertrain_Domain_Ctrl -> Onboard_Charger -> Charge_Port_Ctrl,BATTERY_STATUS,BatterySOH,Charge_Port_Ctrl;Onboard_Charger,FR_POWE_067
+Powertrain_Domain_Ctrl -> Traction_Inverter_Ctrl,BATTERY_STATUS,FuelLevel,Traction_Inverter_Ctrl,FR_POWE_067
+Powertrain_Domain_Ctrl -> Engine_Control_Module -> Throttle_Body_Ctrl,BATTERY_STATUS,IntakeAirTemp,Engine_Control_Module;Throttle_Body_Ctrl,FR_POWE_067
+Chassis_Domain_Ctrl -> Electric_Parking_Brake,STABILITY_STATUS,WheelSpeedRR,Electric_Parking_Brake,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Torque_Sensor,STABILITY_STATUS,CaliperForceLeft,Steering_Torque_Sensor;Electric_Power_Steering,FR_CHAS_068
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl,STABILITY_STATUS,BrakePedalSwitch,Air_Suspension_Ctrl,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,STABILITY_STATUS,SteeringAngle,Wheel_Speed_Sensor_RL,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_R,STABILITY_STATUS,ESCActive,Electric_Parking_Brake;Brake_Caliper_Actuator_R,FR_CHAS_068
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Air_Compressor_Ctrl,STABILITY_STATUS,SteeringAssistLevel,Air_Suspension_Ctrl;Air_Compressor_Ctrl,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,STABILITY_STATUS,YawRate,Wheel_Speed_Sensor_FR;Electronic_Stability_Ctrl,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module,STABILITY_STATUS,VehicleSpeed,Electronic_Stability_Ctrl;ABS_Module,FR_CHAS_068
+Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,STABILITY_STATUS,TirePressureRR,Tire_Pressure_Monitor,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Angle_Sensor,STABILITY_STATUS,LongitudinalAccel,Steering_Angle_Sensor;Electric_Power_Steering,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_L,STABILITY_STATUS,HillHoldActive,Brake_Caliper_Actuator_L,FR_CHAS_068
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,STABILITY_STATUS,TirePressureRL,Height_Sensor_Front;Air_Suspension_Ctrl,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,STABILITY_STATUS,BrakePressure,ABS_Module;Electronic_Stability_Ctrl;Wheel_Speed_Sensor_FL,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,STABILITY_STATUS,SuspensionMode,Brake_Booster_Ctrl;Electronic_Stability_Ctrl,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RR,STABILITY_STATUS,TirePressureFR,Wheel_Speed_Sensor_RR;Electronic_Stability_Ctrl,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,STABILITY_STATUS,WheelSpeedFR,Yaw_Rate_Sensor;Electronic_Stability_Ctrl,FR_CHAS_068
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Rear,STABILITY_STATUS,CaliperForceRight,Air_Suspension_Ctrl;Height_Sensor_Rear,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electric_Parking_Brake,STABILITY_STATUS,RideHeightFront,Electric_Parking_Brake,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Torque_Sensor,STABILITY_STATUS,ParkBrakeState,Electric_Power_Steering;Steering_Torque_Sensor,FR_CHAS_068
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,STEERING_DATA,WheelSpeedFL,Wheel_Speed_Sensor_RL;Electronic_Stability_Ctrl;ABS_Module,FR_CHAS_069
+Chassis_Domain_Ctrl -> Electric_Parking_Brake,STEERING_DATA,TirePressureFL,Electric_Parking_Brake,FR_CHAS_069
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl,STEERING_DATA,ESCActive,Air_Suspension_Ctrl,FR_CHAS_069
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module,STEERING_DATA,WheelSpeedRL,ABS_Module;Electronic_Stability_Ctrl,FR_CHAS_069
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FR,STEERING_DATA,TirePressureRL,Wheel_Speed_Sensor_FR,FR_CHAS_069
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,STEERING_DATA,SuspensionMode,Height_Sensor_Front;Air_Suspension_Ctrl,FR_CHAS_069
+Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Brake_Booster_Ctrl,STEERING_DATA,BrakePedalSwitch,Brake_Booster_Ctrl;Electronic_Stability_Ctrl,FR_CHAS_069
+Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Air_Compressor_Ctrl,STEERING_DATA,BrakePressure,Air_Suspension_Ctrl;Air_Compressor_Ctrl,FR_CHAS_069
+Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_R,STEERING_DATA,TirePressureFR,Electric_Parking_Brake;Brake_Caliper_Actuator_R,FR_CHAS_069
+Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,STEERING_DATA,CaliperForceLeft,Tire_Pressure_Monitor,FR_CHAS_069
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,STEERING_DATA,LateralAccel,ABS_Module;Wheel_Speed_Sensor_RL,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Torque_Sensor,STEERING_DATA,CaliperForceLeft,Steering_Torque_Sensor,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,STEERING_DATA,YawRate,Chassis_Domain_Ctrl;ABS_Module;Wheel_Speed_Sensor_FL,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,STEERING_DATA,TirePressureFL,Yaw_Rate_Sensor;Electronic_Stability_Ctrl;Chassis_Domain_Ctrl,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,STEERING_DATA,SteeringAssistLevel,Air_Suspension_Ctrl;Height_Sensor_Front,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl,STEERING_DATA,VehicleSpeed,Air_Suspension_Ctrl;Chassis_Domain_Ctrl,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,STEERING_DATA,LongitudinalAccel,Chassis_Domain_Ctrl;Tire_Pressure_Monitor,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Parking_Brake -> Brake_Caliper_Actuator_R,STEERING_DATA,WheelSpeedFL,Brake_Caliper_Actuator_R;Chassis_Domain_Ctrl,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl,STEERING_DATA,WheelSpeedRR,Chassis_Domain_Ctrl;Electronic_Stability_Ctrl,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Parking_Brake,STEERING_DATA,BrakePedalSwitch,Electric_Parking_Brake,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_RL,STEERING_DATA,HillHoldActive,Chassis_Domain_Ctrl;Wheel_Speed_Sensor_RL,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electric_Power_Steering -> Steering_Torque_Sensor,STEERING_DATA,CaliperForceRight,Electric_Power_Steering;Chassis_Domain_Ctrl;Steering_Torque_Sensor,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> ABS_Module -> Wheel_Speed_Sensor_FL,STEERING_DATA,TractionCtrlActive,Chassis_Domain_Ctrl;Wheel_Speed_Sensor_FL,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Electronic_Stability_Ctrl -> Yaw_Rate_Sensor,STEERING_DATA,RideHeightFront,Yaw_Rate_Sensor,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl -> Height_Sensor_Front,STEERING_DATA,ABSActive,Height_Sensor_Front;Air_Suspension_Ctrl;Chassis_Domain_Ctrl,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Air_Suspension_Ctrl,STEERING_DATA,WheelSpeedFR,Chassis_Domain_Ctrl;Air_Suspension_Ctrl,FR_CHAS_070
+Central_Gateway -> Chassis_Domain_Ctrl -> Tire_Pressure_Monitor,STEERING_DATA,TirePressureRL,Chassis_Domain_Ctrl;Tire_Pressure_Monitor,FR_CHAS_070
